@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+}
+/* box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.1); */
+/* bottom text{
+  bottom: 0;
+  left: 0;
+  position: absolute;
+} */
+body {
+  background: linear-gradient(
+    to right,
+    #292d32 0%,
+    #292d32 35%,
+    #ffff 0%,
+    #ffff 50%
+  );
+}
+
+.logo {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 2rem 2rem;
+}
+.logo img {
+  box-sizing: border-box;
+}
+.fill-in-text {
+  position: relative;
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  padding: 12rem 0;
+  padding-bottom: 9rem;
+}
+.fill-in-text h1 {
+  color: #ffff;
+  width: 300px;
+  min-height: 120px;
+}
+.fill-in-text p {
+  width: 240px;
+  color: #ffff;
+  letter-spacing: 0;
+  font-family: "Poppins", sans-serif;
+}
+.testimoni img{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: max-content;
+  padding: 0 2rem;
+  position: absolute;
+  top: 65%;
+}
+.testimoni p{
+  width: 400px;
+  color: #ffff;
+  padding: 0 3.5rem;
+  top: 100%;
+}
+.regist{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 14%;
+  left: 46%;
+
+}
+.fill-info{
+  display: flex;
+  flex-direction: column;
+}
+.fill-info h1{
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+  padding-bottom: 4px;
+}
+.fill-info p{
+  font-family: "Poppins", sans-serif;
+}
+.input-box{
+  padding-bottom: 1.5rem
+}
+.input-box p{
+  font-size: 18px;
+  margin-bottom: 1vh;
+}
+.input-box input{
+  border-color: whitesmoke;
+  border-style: solid;
+  border-radius: 2rem;
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 28rem 8px 1.4rem;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.02);
+}
+
+::-webkit-input-placeholder {
+  text-align: left;
+}
+
+:-moz-placeholder {
+  text-align: left;
+}
+.policy .poli{
+  padding: 30px;
+  font-size: 16px;
+  color: #FFA502;
+}
+.policy .pol{
+  padding: 30px;
+  font-size: 16px;
+}
+
+.policy input[type="checkbox"]{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  cursor: pointer;
+  background-color: #ffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.register{
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+button{
+  border-radius: 6px;
+  padding: 0.6rem 2rem 0.6rem;
+  background-color: #F7C873;
+  border: none;
+  box-shadow: 0px 10px 20px 5px rgba(1, 0, 0, 0.05);
+}
+button:hover {background-color: #FFB32B}
+
+button:active {
+  background-color: #FFA400;
+  box-shadow: 0 5px #F1F1F1;
+  transform: translateY(4px);
+}
+
+
+
