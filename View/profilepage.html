@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/style/profilepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7563b17235.js" crossorigin="anonymous"></script>
+    <title>Lapak Kita</title>
+</head>
+<body>
+
+    <div class="page-container">
+        <div class="navbar-container">
+            <div class="navbar">
+                <div class="navbar-left">
+                    <div class="logo">
+                        <img src="/assets/Homepage/logoblackversion.png" id="navbar-logo">
+                    </div>
+                    <div class="search-bar-container">
+                        <div class="search-bar">
+                            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                            <input type="text" class="search-box" placeholder="Kamu sedang cari apa?">
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-right">
+                    <h3 class="navbar-options-right" id="home-button">
+                        <i class="fa-solid fa-house" id="home-icon"></i>
+                        <a href="#">Utama</a>
+                    </h3>
+                    <h3 class="navbar-options-right" id="favorit-button">
+                        <i class="fa-regular fa-bookmark" id="favorite-icon"></i>
+                        <a href="#">Favorit</a>
+                    </h3>
+                    <h3 class="navbar-options-right" id="unggah-button">
+                        <i class="fa-regular fa-message" id="upload-icon"></i>
+                        <a href="#">Unggah</a>
+                    </h3>
+                    <h3 class="navbar-options-right" id="notifikasi-button">
+                        <i class="fa-regular fa-bell" id="bell-icon"></i>
+                        <a href="#">Notifikasi</a>
+                    </h3>
+                    <button class="profile-btn">Profil</button>
+                </div>
+            </div>
+
+            <div class="page-left">
+
+                <div class="pengaturan-profilmu"></div>
+                    <h2 id="pengaturan-profilmu">Pengaturan Profilmu</h2>
+                </div>
+                
+                <div class="buttons-left">
+                    <button id="profilmu">
+                        <i class="fa-regular fa-user" style="color: #1a1a1a;" id="user-icon"></i>
+                        <h2> Profilmu </h2>
+                        <i class="fa-solid fa-angle-right" style="color: #1a1a1a;" id="arrow-right1"></i>
+                    </button>
+
+                    <button id="lengkapi-profilmu">
+                        <i class="fa-regular fa-clipboard" id="clipboard-icon"></i>
+                        <h2> Lengkapi Profilmu! </h2>
+                        <i class="fa-solid fa-angle-right" style="color: #1a1a1a;" id="arrow-right2"></i>
+                    </button>
+
+                    <button id="portofoliomu">
+                        <i class="fa-regular fa-file" id="file-icon"></i>
+                        <h2> Portofoliomu </h2>
+                        <i class="fa-solid fa-angle-right" style="color: #1a1a1a;" id="arrow-right3"></i>
+                    </button>
+
+                    <button id="keluar-akun">
+                        <h2> Keluar Akun</h2>
+                        <i class="fa-solid fa-arrow-right-from-bracket" id="logout"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="random-line">
+                <hr class="line" width="45%" color="#ccccccc1">
+            </div>
+            <div class="page-right">
+                <div class="main-profile-container">
+                    <div class="main-profile-left">                        <form action="upload" method="post" enctype="multipart/form-data">
+                        <div class="profile-pic-div">
+                            <img src="/assets/profilepicture.png" id="photo">
+                            <input type="file" id="file">
+                            <label for="file" id="uploadBtn">Choose Photo</label>
+                        </div>
+                    </div>
+                    <div class="main-profile-right">
+                        <div class="user-name">
+                            <h1>Michelle Winata</h1>
+                        </div>
+                        <div class="phone-joined-on">
+                            <h3>0812345689 | Bergabung pada 12 Sep 2019</h3>
+                        </div>
+                        <div class="email">
+                            <h2>michelle.winata31@gmail.com</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-section">
+                    <div class="lengkapi">
+                        <h1>Lengkapi Data Akun</h1>
+                    </div>
+                    <div class="bidang-diminati">
+                        <h2>
+                            Bidang yang Diminati
+                        </h2>
+                        <input type="text" id="input-bidang">
+                    </div>
+                    <div class="sosial-media">
+                        <h1>
+                            Sosial Media
+                        </h1>
+                        <div class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                            <input type="text" id="instagram-handle">
+                        </div>
+                        <div class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                            <input type="text" id="twitter-handle">
+                        </div>
+                        <div class="facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                            <input type="text" id="facebook-handle">
+                        </div>
+                        <div class="website">
+                            <i class="fa-solid fa-globe"></i>
+                            <input type="text" id="website">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/scripts/profilepage.js" defer></script>
+</html>
