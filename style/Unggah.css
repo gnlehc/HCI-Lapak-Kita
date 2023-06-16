@@ -1,0 +1,265 @@
+*
+{
+    margin: 0;
+    padding: 0px;
+    font-family: 'DM Sans', sans-serif;
+}
+body
+{
+    width: 100%;
+}
+.page-container
+{
+    width:100%;
+    min-height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.navbar-container{
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+}
+.navbar
+{
+    position: fixed;
+    z-index: 1;
+    height: 6vw;
+    background: white;
+    border-color: rgba(204, 204, 204, 0.757);
+    box-shadow: 0px 3px rgba(204, 204, 204, 0.401);
+}
+.navbar-left
+{
+    display: flex;
+    flex-direction: row;
+}
+#navbar-logo
+{
+    width: 12vw;
+    transform: translate(20%, 40%);
+}
+.search-bar-container
+{
+    width: 17vw;
+    height: 2vw;
+}
+.search-box
+{
+    /* position: relative; */
+    background-color: white;
+    width: 15vw;
+    padding-left: 4vw;
+    padding-bottom: 0.2vw;
+    height: 2vw;
+    z-index: -1;
+    transform: translate(35%, 20%);
+    border: none;
+    border-radius: 0.4vw;
+}
+#search-icon
+{
+    position: relative;
+    font-size: 1.2vw;
+    transform: translateX(600%);
+    transform: translateY(190%);
+    z-index: 1;
+    margin-left: 8vw;
+}
+#home-icon
+{
+    color: #1a1a1a;
+}
+.navbar-right a 
+{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+.navbar-right
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 43vw;
+    margin-top: -1.4vw;
+}
+#home-button:hover::after
+{
+    width: 100%;
+}
+#home-button::after
+{
+    content: ' ';
+    width: 0%;
+    height: 4px;
+    background: #FFCA6B;
+    display: block;
+    transition: 0.5s;
+}
+#home-icon
+{
+    padding-right: 0.3vw;
+}
+#favorite-icon
+{
+    padding-right: 0.3vw;
+}
+#favorit-button:hover::after
+{
+    width: 100%;
+}
+#favorit-button::after
+{
+    content: ' ';
+    width: 0%;
+    height: 4px;
+    background: #FFCA6B;
+    display: block;
+    transition: 0.5s;
+}
+#upload-icon
+{
+    padding-right: 0.3vw;
+}
+#unggah-button:hover::after
+{
+    width: 100%;
+}
+#unggah-button::after
+{
+    content: ' ';
+    width: 0%;
+    height: 4px;
+    background: #FFCA6B;
+    display: block;
+    transition: 0.5s;
+}
+#bell-icon
+{
+    padding-right: 0.3vw;
+}
+#notifikasi-button:hover::after
+{
+    width: 100%;
+}
+#notifikasi-button::after
+{
+    content: ' ';
+    width: 0%;
+    height: 4px;
+    background: #FFCA6B;
+    display: block;
+    transition: 0.5s;
+}
+.navbar-options-right
+{
+    padding-right: 4vw;
+}
+.profile-btn
+{
+    width: 6vw;
+    height: 2.3vw;
+    font-size: 1vw;
+    margin-top: -0.4vw;
+    transform: translateX(60%);
+    background: #1a1a1a;
+    color: #FFCA6B;
+    border-radius: 5px;
+    border: #1a1a1a00;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.profile-btn:hover
+{
+    background:#f7d390;
+    color: #1a1a1a;
+}
+
+.page-container{
+    width: 100%;
+    padding: 7% 20%;
+    display: flex;
+    flex-direction: column;
+}
+.title h3{
+    margin-top: 1%;
+    font-weight: normal;
+    font-size: 17px;
+    color: #5b5b5b;
+}
+
+#contact-form{
+    margin-top: 5%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form1{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.form1 h4{
+    font-size: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
+}
+.small-form{
+    height: 30px;
+    width: 93%;
+    border-radius: 10px;
+    padding-left: 2%;
+    border: 1.5px solid #ffcd75;
+    opacity: 70%;
+}
+#large{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+#large h4{
+    margin-bottom: 3%;
+}
+.large-form{
+    height: 100%;
+    width: 93%;
+    border-radius: 10px;
+    padding-left: 2%;
+    border: 1.5px solid #ffcd75;
+    opacity: 70%;
+    text-align: justify;
+}
+.form1 .form-content{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-content h1{
+    font-weight: normal;
+}
+#durasi{
+    width: 41.5%;
+}
+::placeholder{
+    font-size: 15px;
+}
+.submit-btn{
+    height: 5%;
+    margin-left: 35%;
+    width: 30%;
+    background-color: #f7d390;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px #ebebeb;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+}
+.submit-btn:hover{
+    background-color: #1a1a1a;
+    color: #f7d390;
+}
