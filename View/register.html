@@ -7,17 +7,16 @@
     <title>lapak kita</title>
     <link rel="icon" type="image/png" href="/assets/logo.png" />
     <link rel="stylesheet" href="/style/register.css" />
-    <script src="/controller/register.js" defer></script>
+    <script src="/scripts/Login_Register.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="content-baseline">
         <div class="logo">
           <img
-            src="/assets/Logo animation for web.png"
+            src="/assets/Login_Register/Logo animation for web.png"
             style="width: 160px"
-            alt="Logo"
-          />
+            alt="Logo" />
         </div>
         <div class="fill-in-text">
           <h1>Bangkit bersama lapak kita!</h1>
@@ -28,7 +27,7 @@
           </p>
         </div>
         <div class="testimoni">
-          <img src="/assets/Testimoni.png" alt="" />
+          <img src="/assets/Login_Register/Testimoni.png" alt="" />
           <p>
             Ngemudahin banget deh lapak kita buat gue ketemu client dan
             transparansi lokernya juga ngebantu gue buat tau apa yang gue mau.
@@ -50,38 +49,40 @@
             <br />
           </div>
           <br />
-          <div class="input-box">
-            <p>Nama Lengkap</p>
-            <input type="text" placeholder="Ayu Diaz" id="name" />
-          </div>
-          <div class="input-box">
-            <p>Nomor Ponsel atau Email</p>
-            <input type="text" placeholder="0813461239" id="tlp" />
-          </div>
-          <div class="input-box">
-            <p>Kata Sandi</p>
-            <input type="text" placeholder="Minimum 8 karakter" />
-          </div>
-          <div class="input-box">
-            <p>Konfirmasi Kata Sandi</p>
-            <input type="text" placeholder="Minimum 8 karakter" />
-          </div>
-          <div class="policy">
-            <label for="checkboxid" class="checkbox">
-              <input type="checkbox" id="checkbox" />
-              <span class="pol"
-                >Saya setuju dengan segala ketentuan dan peraturan lapak
-                kita.</span
-              >
-              <br />
-              <span class="poli"> Syarat dan ketetuan berlaku</span>
-            </label>
-          </div>
-          <div class="register">
-            <button type="button">
-              <b style="font-size: larger">Daftar</b>
-            </button>
-          </div>
+          <form action="" id="form-field">
+            <div class="input-box">
+              <p>Nama Lengkap</p>
+              <input type="text" placeholder="Ayu Diaz" id="name" />
+            </div>
+            <div class="input-box">
+              <p>Nomor Ponsel atau Email</p>
+              <input type="text" placeholder="0813461239" id="tlp" />
+            </div>
+            <div class="input-box">
+              <p>Kata Sandi</p>
+              <input type="text" placeholder="Minimum 8 karakter" />
+            </div>
+            <div class="input-box">
+              <p>Konfirmasi Kata Sandi</p>
+              <input type="text" placeholder="Minimum 8 karakter" />
+            </div>
+            <div class="policy">
+              <label for="checkboxid" class="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <span class="pol"
+                  >Saya setuju dengan segala ketentuan dan peraturan lapak
+                  kita.</span
+                >
+                <br />
+                <span class="poli"> Syarat dan ketetuan berlaku</span>
+              </label>
+            </div>
+            <div class="register">
+              <button type="submit">
+                <b style="font-size: larger">Daftar</b>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

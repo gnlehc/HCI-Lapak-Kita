@@ -16,10 +16,11 @@
 .navbar{
     margin-top: -20px;
     background-color: white;
-    width: 90%;
+    width: 92%;
     display: flex;
     align-items: center;
     position: fixed;
+    z-index: 1;
 }
 
 .logo{
@@ -44,11 +45,52 @@ nav{
     flex: 1;
     text-align: right;
 }
+nav ul{
+    margin-bottom: 2%;
+}
 nav ul li{
+    margin-top: 2%;
     list-style: none;
     display: inline-block;
+    position: relative;
     margin-right: 30px;
     cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+nav ul li:nth-child(1){
+    color: #1a1a1a;
+}
+nav ul li:nth-child(1)::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: #f7c873;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 100ms ease-in;
+}
+nav ul li a::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    border-radius: 100px;
+    background-color: #f7c873;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.2s ease-in;
+}
+nav ul li a:hover::after{
+    color: #1a1a1a;
+    width: 100%;
+}
+nav ul li a:hover{
+    color: #1a1a1a;
 }
 
 .profil{
@@ -63,6 +105,7 @@ nav ul li{
 }
 .profil:hover{
     background-color: #ffca6b;
+    font-weight: bold;
     color: #1a1a1a;
 }
 
@@ -76,6 +119,7 @@ nav ul li{
 }
 .page-1-kiri{
     width: 50%;
+    margin-left: 5%;
     height: 350px;
     border: solid #ffca6b;
     border-radius: 10px;
@@ -107,6 +151,14 @@ nav ul li{
     margin-top: 17%;
     margin-left: 8%;
     cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.performa-profil:hover{
+    background: linear-gradient(to right, #1a1a1a, #ffefd3);
+    color: #ffefd3;
+}
+#arrow-right{
+    transform: translateX(1750%);
 }
 .loker-yang-kamu-lamar{
     padding-left: 8%;
@@ -133,10 +185,9 @@ nav ul li{
     margin-left: 8%;
     margin-top: 5%;
 }
-.page-1-kanan-admin .icons-panah{
+.page-1-kanan-admin #arrow-right-2{
     font-size: 20px;
-    margin-top: -24%;
-    margin-left: 90%;
+    transform: translate(2000%, -200%);
 }
 .informasi-loker{
     display: flex;
@@ -242,6 +293,12 @@ nav ul li{
 .artikel-1-1 .artikel-img-1{
     border-radius: 10px;
     width: 100%;
+    transition: 0.2s ease-in;
+}
+.artikel-1-1 .artikel-img-1:hover{
+    border-radius: 10px;
+    width: 100%;
+    transform: scale(1.02);
 }
 .artikel-1-1 h3{
     font-size: 20px;
@@ -258,6 +315,12 @@ nav ul li{
 .artikel-1-2 .artikel-img-2{
     border-radius: 10px;
     width: 100%;
+    transition: 0.2s ease-in;
+}
+.artikel-1-2 .artikel-img-2:hover{
+    border-radius: 10px;
+    width: 100%;
+    transform: scale(1.02);
 }
 .artikel-1-2 h3{
     font-size: 20px;
@@ -271,9 +334,15 @@ nav ul li{
     width: 22%;
     height: 100px;
 }
-.artikel-1-3 .artikel-img-2{
+.artikel-1-3 .artikel-img-3{
     border-radius: 10px;
     width: 100%;
+    transition: 0.2s ease-in;
+}
+.artikel-1-3 .artikel-img-3:hover{
+    border-radius: 10px;
+    width: 100%;
+    transform: scale(1.02);
 }
 .artikel-1-3 h3{
     font-size: 20px;
@@ -287,9 +356,15 @@ nav ul li{
     width: 22%;
     height: 100px;
 }
-.artikel-1-4 .artikel-img-2{
+.artikel-1-4 .artikel-img-4{
     border-radius: 10px;
     width: 100%;
+    transition: 0.2s ease-in;
+}
+.artikel-1-4 .artikel-img-4:hover{
+    border-radius: 10px;
+    width: 100%;
+    transform: scale(1.02);
 }
 .artikel-1-4 h3{
     font-size: 20px;
@@ -323,6 +398,10 @@ nav ul li{
 .artikel-2-1 .artikel-img-5{
     border-radius: 10px;
     width: 45%;
+    transition: 0.2s ease-in;
+}
+.artikel-2-1 .artikel-img-5:hover{
+    transform:scale(1.02);
 }
 .artikel-2-1 h3{
     align-self: center;
@@ -339,6 +418,10 @@ nav ul li{
 .artikel-2-2 .artikel-img-6{
     border-radius: 10px;
     width: 45%;
+    transition: 0.2s ease-in;
+}
+.artikel-2-2 .artikel-img-6:hover{
+    transform:scale(1.02);
 }
 .artikel-2-2 h3{
     align-self: center;
@@ -355,6 +438,10 @@ nav ul li{
 .artikel-2-3 .artikel-img-7{
     border-radius: 10px;
     width: 45%;
+    transition: 0.2s ease-in;
+}
+.artikel-2-3 .artikel-img-7:hover{
+    transform:scale(1.02);
 }
 .artikel-2-3 h3{
     align-self: center;
