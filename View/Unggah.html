@@ -1,117 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/Unggah.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/80c4be0417.js" crossorigin="anonymous"></script>
-    <title> Unggah Portofolio </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/Unggah.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/80c4be0417.js"
+      crossorigin="anonymous"></script>
+    <title>Unggah Portofolio</title>
+  </head>
+  <body>
     <div class="navbar-container">
-        <div class="navbar">
-            <div class="navbar-left">
-                <div class="logo">
-                    <img src="/assets/Homepage/logoblackversion.png" id="navbar-logo">
-                </div>
-                <div class="search-bar-container">
-                    <div class="search-bar">
-                        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
-                        <input type="text" class="search-box" placeholder="Kamu sedang cari apa?">
-                    </div>
-                </div>
+      <div class="navbar">
+        <nav>
+          <div class="navbar-left">
+            <div class="logo">
+              <img
+                src="/assets/Homepage/logoblackversion.png"
+                id="navbar-logo" />
             </div>
-            <div class="navbar-right">
-                <h3 class="navbar-options-right" id="home-button">
-                    <i class="fa-solid fa-house" id="home-icon"></i>
-                    <a href="/View/homepage.html">Utama</a>
-                </h3>
-                <h3 class="navbar-options-right" id="favorit-button">
-                    <i class="fa-regular fa-bookmark" id="favorite-icon"></i>
-                    <a href="#">Favorit</a>
-                </h3>
-                <h3 class="navbar-options-right" id="unggah-button">
-                    <i class="fa-regular fa-message" id="upload-icon"></i>
-                    <a href="#">Unggah</a>
-                </h3>
-                <h3 class="navbar-options-right" id="notifikasi-button">
-                    <i class="fa-regular fa-bell" id="bell-icon"></i>
-                    <a href="#">Notifikasi</a>
-                </h3>
-                <button class="profile-btn">Profil</button>
-            </div>
+            <!-- <div class="search-bar-container">
+                        <div class="search-bar">
+                            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                            <input type="text" class="search-box" placeholder="Kamu sedang cari apa?">
+                        </div>
+                    </div> -->
+          </div>
+          <div class="navbar-right">
+            <h3 class="navbar-options-right" id="home-button">
+              <i class="fa-solid fa-house" id="home-icon"></i>
+              <a href="/View/homepage.html">Utama</a>
+            </h3>
+            <h3 class="navbar-options-right" id="favorit-button">
+              <i class="fa-regular fa-bookmark" id="favorite-icon"></i>
+              <a href="#">Favorit</a>
+            </h3>
+            <h3 class="navbar-options-right" id="unggah-button">
+              <i class="fa-regular fa-message" id="upload-icon"></i>
+              <a href="Unggah.html">Unggah</a>
+            </h3>
+            <h3 class="navbar-options-right" id="notifikasi-button">
+              <i class="fa-regular fa-bell" id="bell-icon"></i>
+              <a href="#">Notifikasi</a>
+            </h3>
+            <button class="profile-btn">Profil</button>
+          </div>
+        </nav>
+        <div class="ham-menu">
+          <img
+            src="/assets/bars-filter-svgrepo-com.svg"
+            class="hamburger"
+            alt="" />
         </div>
+      </div>
     </div>
 
     <div class="page-container">
-        <div class="title">
-            <h1> Unggah </h1>
-            <h3> Bingung sudah melamar namun tidak diterima oleh UMKM-nya? Mungkin portofoliomu kurang. Yuk unggah portofoliomu disini. Pastikan original buatanmu yaa! </h3>
+      <div class="title">
+        <h1>Unggah</h1>
+        <h3>
+          Bingung sudah melamar namun tidak diterima oleh UMKM-nya? Mungkin
+          portofoliomu kurang. Yuk unggah portofoliomu disini. Pastikan original
+          buatanmu yaa!
+        </h3>
+      </div>
+
+      <form id="contact-form" name="contact-form">
+        <div class="form1">
+          <h4>Judul</h4>
+          <div class="form-content">
+            <input
+              id="judul"
+              type="text"
+              name="judul"
+              class="small-form"
+              placeholder="Contoh: Instagram Admin" />
+            <!-- <i class="fa-solid fa-check" style="color: #1bc117"></i> -->
+          </div>
+          <div class="invalid"></div>
         </div>
 
-        <form id="contact-form" name="contact-form">
-            <div class="form1">
-                <h4> Judul </h4>
-                <div class="form-content">
-                    <input id="judul" type="text" name="judul" class="small-form" placeholder="Contoh: Instagram Admin">
-                    <!-- <i class="fa-solid fa-check" style="color: #1bc117"></i> -->
-                </div>
-                <div class="invalid"></div>
-            </div>
-            
-            <div class="form1" id="large">
-                <h4> Deskripsi </h4>
-                <div class="form-content">
-                    <input id="deskripsi" type="text" name="deskripsi" class="large-form" placeholder="Isi dengan deskripsi pekerjaanmu.">
-                    <!-- <i class="fa-solid fa-check" style="color: #1bc117"></i> -->
-                </div>
-                <div class="invalid"></div>
-            </div>
+        <div class="form1" id="large">
+          <h4>Deskripsi</h4>
+          <div class="form-content">
+            <input
+              id="deskripsi"
+              type="text"
+              name="deskripsi"
+              class="large-form"
+              placeholder="Isi dengan deskripsi pekerjaanmu." />
+            <!-- <i class="fa-solid fa-check" style="color: #1bc117"></i> -->
+          </div>
+          <div class="invalid"></div>
+        </div>
 
-            <div class="form1">
-                <h4> Foto Hasil Kerja </h4>
-                <div class="form-content">
-                    <input id="foto" type="file" name="foto" class="small-form" accept="image/jpg" accept="image/jpeg" accept="image/png">
-                    <!-- <i class="fa-solid fa-check" style="color: #1bc117"></i> -->
-                </div>
-                <div class="invalid"></div>
-            </div>
+        <div class="form1">
+          <h4>Foto Hasil Kerja</h4>
+          <div class="form-content">
+            <input
+              id="foto"
+              type="file"
+              name="foto"
+              class="small-form"
+              accept="image/jpg"
+              accept="image/jpeg"
+              accept="image/png" />
+            <!-- <i class="fa-solid fa-check" style="color: #1bc117"></i> -->
+          </div>
+          <div class="invalid"></div>
+        </div>
 
-            <div class="form1">
-                <h4> Durasi Bekerja </h4>
-                <div class="form-content">
-                    <input id="durasi" type="date" name="durasi" class="small-form">
-                    <h1> - </h1>
-                    <input id="durasi" type="date" name="durasi" class="small-form">
-                    <!-- <i class="fa-solid fa-check" style="color: #1bc117"></i> -->
-                </div>
-                <div class="invalid"></div>
-            </div>
+        <div class="form1">
+          <h4>Durasi Bekerja</h4>
+          <div class="form-content">
+            <input id="durasi" type="date" name="durasi" class="small-form" />
+            <h1>-</h1>
+            <input id="durasi" type="date" name="durasi" class="small-form" />
+            <!-- <i class="fa-solid fa-check" style="color: #1bc117"></i> -->
+          </div>
+          <div class="invalid"></div>
+        </div>
 
-            <div class="form1">
-                <h4> Lokasi </h4>
-                <div class="form-content">
-                    <input id="lokasi" type="type" name="lokasi" class="small-form" placeholder="Remote - Jakarta">
-                    <!-- <i class="fa-solid fa-check" style="color: #1bc117"></i> -->
-                </div>
-                <div class="invalid"></div>
-            </div>
+        <div class="form1">
+          <h4>Lokasi</h4>
+          <div class="form-content">
+            <input
+              id="lokasi"
+              type="type"
+              name="lokasi"
+              class="small-form"
+              placeholder="Remote - Jakarta" />
+            <!-- <i class="fa-solid fa-check" style="color: #1bc117"></i> -->
+          </div>
+          <div class="invalid"></div>
+        </div>
 
-            <div class="form1" id="large">
-                <h4> Catatan Lainnya </h4>
-                <div class="form-content">
-                    <input id="catatan" type="text" name="catatan" class="large-form" placeholder="Isi dengan penjelasan lain tentang pekerjaan ini.">
-                    <!-- <i class="fa-solid fa-check" style="color: #1bc117"></i> -->
-                </div>
-                <div class="invalid"></div>
-            </div>
+        <div class="form1" id="large">
+          <h4>Catatan Lainnya</h4>
+          <div class="form-content">
+            <input
+              id="catatan"
+              type="text"
+              name="catatan"
+              class="large-form"
+              placeholder="Isi dengan penjelasan lain tentang pekerjaan ini." />
+            <!-- <i class="fa-solid fa-check" style="color: #1bc117"></i> -->
+          </div>
+          <div class="invalid"></div>
+        </div>
 
-            <button class="submit-btn"> Unggah </button>
-        </form>
+        <button class="submit-btn">Unggah</button>
+      </form>
     </div>
 
-    <script  src="/scripts/Unggah.js"></script>
-    
-</body>
+    <script src="/scripts/Unggah.js"></script>
+  </body>
 </html>
