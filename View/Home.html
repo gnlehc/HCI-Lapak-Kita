@@ -1,143 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/Home.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/80c4be0417.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/Home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/80c4be0417.js"
+      crossorigin="anonymous"></script>
     <title>Halaman Utama</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-page">
-        <div class="navbar">
-            <img src="/assets/Homepage/completed logo.png" class="logo">
-            <div class="searchbox">
-                <input type="search" class="search-box" placeholder="Kamu sedang cari apa?">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href=""> Utama </li></a>
-                    <li><a href=""> Favorit </li></a>
-                    <li><a href=""> Unggah </li></a>
-                    <li><a href=""> Notifikasi </li></a>
-                </ul>
-            </nav>
-            <input type="button" value="Profil" class="profil">
+      <div class="navbar">
+        <img src="/assets/Homepage/completed logo.png" class="logo" />
+        <div class="searchbox">
+          <input
+            type="search"
+            class="search-box"
+            placeholder="Kamu sedang cari apa?" />
         </div>
+        <nav>
+          <ul>
+            <li><a href=""> Utama </a></li>
+            <li><a href=""> Favorit </a></li>
+            <li><a href="/View/Unggah.html"> Unggah </a></li>
+            <li><a href=""> Notifikasi </a></li>
+          </ul>
+        </nav>
+        <input type="button" value="Profil" class="profil" />
+      </div>
 
-        <div class="page-1">
-            <div class="page-1-kiri">
-                <h3> Welcome,</h3>
-                <h1> Chelsea Ng!</h1>
-                <div class="performa-profilmu">
-                    <button class="performa-profil" a href=""> Performa Profilmu <i class="fa-solid fa-angle-right" id="arrow-right" style="color: #1a1a1a"></i></button>
-                </div>
-            </div>
-            <div class="page-1-kanan">
-                <div class="loker-yang-kamu-lamar">
-                    <h2> Loker yang kamu lamar </h2>
-                </div>
-                <div class="page-1-kanan-admin" a href="">
-                    <div class="judul">
-                        <i class="fa-solid fa-user-gear" style="color: #1a1a1a"></i>
-                    </div>
-                    <div class="informasi-loker">
-                        <h3> Instagram Admin</h3>
-                        <h5> Sedang berjalan </h5>
-                        <!-- icons lingkaran kuning -->
-                        <h4> 3 Notifikasi baru</h4>
-                        <div class="icons-panah">
-                            <i class="fa-solid fa-angle-right" id="arrow-right-2" style="color: #1a1a1a"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="page-1-kanan-slot">
-                    <!-- gaada isi -->
-                </div>
-            </div>
-        </div>
+      <div class="page-1">
+        <div class="page-1-kiri">
+          <h3>Welcome,</h3>
+          <div id="user"></div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              var storedData = localStorage.getItem("user");
+              var jsonArray = storedData ? JSON.parse(storedData) : [];
 
-        <div class="page-2">
-            <div class="page-2-kiri">
-                <h1> Temui mereka di lapak kita </h1>
-                <h4><a href=""> Lihat lebih lanjut disini </h4></a>
-            </div>
-            <div class="page-2-kanan">
-                <div class="change-card">
-                    <!-- gatau cara buatnya di html css  -->
-                </div>
-            </div>
-        </div>
+              if (jsonArray.length > 0) {
+                var currentUser = jsonArray[jsonArray.length - 1];
+                var username = currentUser.name;
+                var usersElement = document.getElementById("user");
+                usersElement.innerHTML = `<h1>${username}!</h1>`;
+              }
+            });
+          </script>
 
-        <!-- ARTIKEL -->
-        <div class="border">
-            <div class="line">
+          <!-- <h1>Chelsea Ng!</h1> -->
+          <div class="performa-profilmu">
+            <button class="performa-profil" a href="">
+              Performa Profilmu
+              <i
+                class="fa-solid fa-angle-right"
+                id="arrow-right"
+                style="color: #1a1a1a"></i>
+            </button>
+          </div>
+        </div>
+        <div class="page-1-kanan">
+          <div class="loker-yang-kamu-lamar">
+            <h2>Loker yang kamu lamar</h2>
+          </div>
+          <div class="page-1-kanan-admin" a href="">
+            <div class="judul">
+              <i class="fa-solid fa-user-gear" style="color: #1a1a1a"></i>
+            </div>
+            <div class="informasi-loker">
+              <h3>Instagram Admin</h3>
+              <h5>Sedang berjalan</h5>
+              <!-- icons lingkaran kuning -->
+              <h4>3 Notifikasi baru</h4>
+              <div class="icons-panah">
+                <i
+                  class="fa-solid fa-angle-right"
+                  id="arrow-right-2"
+                  style="color: #1a1a1a"></i>
+              </div>
+            </div>
+          </div>
+          <div class="page-1-kanan-slot">
+            <!-- gaada isi -->
+          </div>
+        </div>
+      </div>
 
-            </div>
-            <h1> Artikel </h1>
+      <div class="page-2">
+        <div class="page-2-kiri">
+          <h1>Temui mereka di lapak kita</h1>
+          <h4><a href=""> Lihat lebih lanjut disini </a></h4>
         </div>
-        <div class="artikel-1">
-            <div class="artikel-1-1">
-                <img src="/assets/Homepage/artikel 1.png" class="artikel-img-1">
-                <h3> Jangan malas untuk bekerja! Karena sekarang semua hal bisa dilakukan secara daring </h3>
-            </div>
-            <div class="artikel-1-2">
-                <img src="/assets/Homepage/artikel 2.png" class="artikel-img-2">
-                <h3> Ingin memperluas jaringanmu ke seluruh kota? Lakukan 3 hal ini! </h3>
-            </div>
-            <div class="artikel-1-3">
-                <img src="/assets/Homepage/artikel 3.png" class="artikel-img-3">
-                <h3> Para pebisnis muda tengah melakukan konferensi pers membahas bisnis digital </h3>
-            </div>
-            <div class="artikel-1-4">
-                <img src="/assets/Homepage/artikel 4.png" class="artikel-img-4">
-                <h3> Sudah melamar kerja dimana-mana namun belum diterima? Yuk simak alasannya! </h3>
-            </div>
+        <div class="page-2-kanan">
+          <div class="change-card">
+            <!-- gatau cara buatnya di html css  -->
+          </div>
         </div>
-        <div class="artikel-2">
-            <div class="artikel-2-kiri">
-                <div class="artikel-2-1">
-                    <img src="/assets/Homepage/artikel 5.png" class="artikel-img-5">
-                    <h3> Merasa kesulitan dalam proses editing video? Ini alternatif yang dapat dilakukan! </h3>
-                </div>
-                <div class="artikel-2-2">
-                    <img src="/assets/Homepage/artikel 6.png" class="artikel-img-6">
-                    <h3> Terungkap! Ini 5 cara memperbaiki CV-mu agar menarik di mata HRD </h3>
-                </div>
-                <div class="artikel-2-3">
-                    <img src="/assets/Homepage/artikel 7.png" class="artikel-img-7">
-                    <h3> Bercita-cita menjadi seorang programmer? Sudah lakukan 3 hal ini belum? </h3>
-                </div>
-            </div>
-            <div class="artikel-2-kanan">
-                <h1> Berita Terpopuler </h1>
-                <div class="list-berita">
-                    <div class="list-berita-1">
-                        <h3> #1 </h3>
-                        <div class="pertama-info">
-                            <h3> Cara membuat CV profesional yang dapat menarik perhatian HRD dan perusahaan </h3>
-                            <h5> lapak kita - 3 hari yang lalu </h5>
-                        </div>
-                    </div>
-                    <div class="list-berita-2">
-                        <h3> #2 </h3>
-                        <div class="kedua-info">
-                            <h3> Luncurkan aplikasi baru, "Grouit" berguna bagi UMKM yang kekurangan modal </h3>
-                            <h5> lapak kita - 5 jam yang lalu </h5>
-                        </div>
-                    </div>
-                    <div class="list-berita-3">
-                        <h3> #3 </h3>
-                        <div class="ketiga-info">
-                            <h3> Beberapa fitur yang mungkin belum anda ketahui di aplikasi "lapak kita" </h3>
-                            <h5> lapak kita - 2 hari yang lalu </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+
+      <!-- ARTIKEL -->
+      <div class="border">
+        <div class="line"></div>
+        <h1>Artikel</h1>
+      </div>
+      <div class="artikel-1">
+        <div class="artikel-1-1">
+          <img src="/assets/Homepage/artikel 1.png" class="artikel-img-1" />
+          <h3>
+            Jangan malas untuk bekerja! Karena sekarang semua hal bisa dilakukan
+            secara daring
+          </h3>
         </div>
+        <div class="artikel-1-2">
+          <img src="/assets/Homepage/artikel 2.png" class="artikel-img-2" />
+          <h3>
+            Ingin memperluas jaringanmu ke seluruh kota? Lakukan 3 hal ini!
+          </h3>
+        </div>
+        <div class="artikel-1-3">
+          <img src="/assets/Homepage/artikel 3.png" class="artikel-img-3" />
+          <h3>
+            Para pebisnis muda tengah melakukan konferensi pers membahas bisnis
+            digital
+          </h3>
+        </div>
+        <div class="artikel-1-4">
+          <img src="/assets/Homepage/artikel 4.png" class="artikel-img-4" />
+          <h3>
+            Sudah melamar kerja dimana-mana namun belum diterima? Yuk simak
+            alasannya!
+          </h3>
+        </div>
+      </div>
+      <div class="artikel-2">
+        <div class="artikel-2-kiri">
+          <div class="artikel-2-1">
+            <img src="/assets/Homepage/artikel 5.png" class="artikel-img-5" />
+            <h3>
+              Merasa kesulitan dalam proses editing video? Ini alternatif yang
+              dapat dilakukan!
+            </h3>
+          </div>
+          <div class="artikel-2-2">
+            <img src="/assets/Homepage/artikel 6.png" class="artikel-img-6" />
+            <h3>
+              Terungkap! Ini 5 cara memperbaiki CV-mu agar menarik di mata HRD
+            </h3>
+          </div>
+          <div class="artikel-2-3">
+            <img src="/assets/Homepage/artikel 7.png" class="artikel-img-7" />
+            <h3>
+              Bercita-cita menjadi seorang programmer? Sudah lakukan 3 hal ini
+              belum?
+            </h3>
+          </div>
+        </div>
+        <div class="artikel-2-kanan">
+          <h1>Berita Terpopuler</h1>
+          <div class="list-berita">
+            <div class="list-berita-1">
+              <h3>#1</h3>
+              <div class="pertama-info">
+                <h3>
+                  Cara membuat CV profesional yang dapat menarik perhatian HRD
+                  dan perusahaan
+                </h3>
+                <h5>lapak kita - 3 hari yang lalu</h5>
+              </div>
+            </div>
+            <div class="list-berita-2">
+              <h3>#2</h3>
+              <div class="kedua-info">
+                <h3>
+                  Luncurkan aplikasi baru, "Grouit" berguna bagi UMKM yang
+                  kekurangan modal
+                </h3>
+                <h5>lapak kita - 5 jam yang lalu</h5>
+              </div>
+            </div>
+            <div class="list-berita-3">
+              <h3>#3</h3>
+              <div class="ketiga-info">
+                <h3>
+                  Beberapa fitur yang mungkin belum anda ketahui di aplikasi
+                  "lapak kita"
+                </h3>
+                <h5>lapak kita - 2 hari yang lalu</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
