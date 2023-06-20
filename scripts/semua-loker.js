@@ -297,46 +297,46 @@ function addToFavorites(event, talents, type) {
     } else {
         // Favorite talent
         favoriteImage.src = "../assets/favoritesyellow.png";
-        addToFavoritesList(talents, type); 
-        addFavoriteCard(talents, type); 
+        addToFavoritesList(talents, type);
+        addFavoriteCard(talents, type);
 
-    favoriteImage.onclick = function () {
-        addToFavorites(event, talents, type); 
-    };
-}
+        favoriteImage.onclick = function () {
+            addToFavorites(event, talents, type);
+        };
+    }
 
-function removeFromFavorites(talents, type) {
-    talents.forEach(talent => {
-        if (talent.type === type) {
-            talent.favorite = 0;
-        }
-    });
-}
+    function removeFromFavorites(talents, type) {
+        talents.forEach(talent => {
+            if (talent.type === type) {
+                talent.favorite = 0;
+            }
+        });
+    }
 
-function removeFavoriteCard(type) {
-    const favoriteCards = document.querySelectorAll(".favorite-cards");
-    favoriteCards.forEach(card => {
-        if (card.querySelector(".contentfav").getAttribute("onclick").includes(type)) {
-            card.remove();
-        }
-    });
-}
+    function removeFavoriteCard(type) {
+        const favoriteCards = document.querySelectorAll(".favorite-cards");
+        favoriteCards.forEach(card => {
+            if (card.querySelector(".contentfav").getAttribute("onclick").includes(type)) {
+                card.remove();
+            }
+        });
+    }
 
-function addToFavoritesList(talents, type) {
-    talents.forEach(talent => {
-        if (talent.type === type) {
-            talent.favorite = 1;
-        }
-    });
-}
+    function addToFavoritesList(talents, type) {
+        talents.forEach(talent => {
+            if (talent.type === type) {
+                talent.favorite = 1;
+            }
+        });
+    }
 
-function addFavoriteCard(talents, type) {
-    const favDiv = document.createElement("div");
-    favDiv.classList.add("favorite-cards");
+    function addFavoriteCard(talents, type) {
+        const favDiv = document.createElement("div");
+        favDiv.classList.add("favorite-cards");
 
-    talents.forEach(talent => {
-        if (talent.type === type) {
-            favDiv.innerHTML = `
+        talents.forEach(talent => {
+            if (talent.type === type) {
+                favDiv.innerHTML = `
           <div class="contentfav" onclick="redirectToLoker('${talent.type}')">
             <img src="${talent.image}"/>
             <div class="text">
@@ -356,11 +356,11 @@ function addFavoriteCard(talents, type) {
           </div>
         `;
 
-            favoritesContainer.appendChild(favDiv);
-        }
-    });
+                favoritesContainer.appendChild(favDiv);
+            }
+        });
+    }
 }
-
 
 // function displayAllTalents(talents) {
 //     y = 1;
@@ -491,6 +491,7 @@ function displayAllTalents(talents) {
     })
 }
 
+
 // function addToFav(event, talents, type) {
 
 
@@ -502,6 +503,3 @@ function displayAllTalents(talents) {
 displayAllTalents(talents);
 
 console.log(y);
-
-
-
