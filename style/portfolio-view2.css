@@ -203,159 +203,13 @@ transform: translateY(2px);
     border-radius: 10px;
     box-shadow: 0px 3px rgba(204, 204, 204, 0.401);
 }
-.navbar-left
-{
-    display: flex;
-    flex-direction: row;
-}
-#navbar-logo
-{
-    width: 12vw;
-    transform: translate(20%, 40%);
-}
-.search-bar-container
-{
-    width: 17vw;
-    height: 2vw;
-}
-.search-box
-{
-    /* position: relative; */
-    background-color: white;
-    width: 15vw;
-    padding-left: 4vw;
-    padding-bottom: 0.2vw;
-    height: 2vw;
-    z-index: -1;
-    transform: translate(35%, 20%);
-    border: none;
-    border-radius: 0.4vw;
-}
-#search-icon
-{
-    position: relative;
-    font-size: 1.2vw;
-    transform: translateX(600%);
-    transform: translateY(190%);
-    z-index: 1;
-    margin-left: 8vw;
-}
-#home-icon
-{
-    color: #1a1a1a;
-}
-.navbar-right a 
-{
-    text-decoration: none;
-    color: #1a1a1a;
-}
-.navbar-right
-{
-    display: flex;
-    flex-direction: row;
-    margin-left: 43vw;
-    margin-top: -1.4vw;
-}
-#home-button:hover::after
-{
-    width: 100%;
-}
-#home-button::after
-{
-    content: ' ';
-    width: 0%;
-    height: 4px;
-    background: #FFCA6B;
-    display: block;
-    transition: 0.5s;
-}
-#home-icon
-{
-    padding-right: 0.3vw;
-}
-#favorite-icon
-{
-    padding-right: 0.3vw;
-}
-#favorit-button:hover::after
-{
-    width: 100%;
-}
-#favorit-button::after
-{
-    content: ' ';
-    width: 0%;
-    height: 4px;
-    background: #FFCA6B;
-    display: block;
-    transition: 0.5s;
-}
-#upload-icon
-{
-    padding-right: 0.3vw;
-}
-#unggah-button:hover::after
-{
-    width: 100%;
-}
-#unggah-button::after
-{
-    content: ' ';
-    width: 0%;
-    height: 4px;
-    background: #FFCA6B;
-    display: block;
-    transition: 0.5s;
-}
-#bell-icon
-{
-    padding-right: 0.3vw;
-}
-#notifikasi-button:hover::after
-{
-    width: 100%;
-}
-#notifikasi-button::after
-{
-    content: ' ';
-    width: 0%;
-    height: 4px;
-    background: #FFCA6B;
-    display: block;
-    transition: 0.5s;
-}
-.navbar-options-right
-{
-    padding-right: 4vw;
-}
-.profile-btn
-{
-    width: 6vw;
-    height: 2.3vw;
-    font-size: 1vw;
-    margin-top: -0.4vw;
-    transform: translateX(60%);
-    background: #1a1a1a;
-    color: #FFCA6B;
-    border-radius: 5px;
-    border: #1a1a1a00;
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-.profile-btn:hover
-{
-    background:#f7d390;
-    color: #1a1a1a;
-}
-
-
 #pengaturan-profilmu
 {
     transform: translate(5%, 400%);
 }
 .buttons-left
 {
-    transform: translate(5%, 90%);
+    transform: translate(5%, 100%);
     display: flex;
     flex-direction: column;
 }
@@ -372,6 +226,10 @@ transform: translateY(2px);
     box-shadow: 2px 3px rgba(128, 128, 128, 0.288);
     border-width: 0.2px;
     cursor: pointer;
+    background: white;
+}
+#profilmu:hover
+{
     background: #f7d390;
 }
 #lengkapi-profilmu
@@ -423,18 +281,14 @@ transform: translateY(2px);
     border-color: rgba(128, 128, 128, 0.288);
     box-shadow: 2px 3px rgba(128, 128, 128, 0.288);
     border-width: 0.2px;
-    background: white;
-    transition: 0.2s ease-in;
-}
-#portofoliomu:hover
-{
     background: #f7d390;
+    transition: 0.2s ease-in;
 }
 #keluar-akun
 {
     display: flex;
     width: 20vw;
-    transform: translateY(700%);
+    transform: translateY(900%);
     padding-left: 2vw;
     height: 2.5vw;
     padding-top: 0.3vw;
@@ -487,153 +341,179 @@ transform: translateY(2px);
 {
     padding-left: 8vw;
     margin-top: -1.5vw;
-    transform: translateY(1600%);
+    transform: translateY(1400%);
 }
 .line
 {
-    transform: rotate(90deg) translateY(-100%);
+    transform: rotate(90deg) translate(5%, 550%);
     padding-left: 2vw;
     margin-top: 10vw;
     padding-bottom: 0.2vw;
     color:#ccccccc1;
 }
-.profile-pic-div
+hr
 {
-    height: 10vw;
-    width: 10vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid grey;
-    transform: translate(-140%, -170%);
+    width: 46vw;
 }
-#photo
+.arrow-left 
 {
-    height: 100%;
-    width: 100%;
+    /* background: aqua; */
+    width: 2vw;
+    transform: translate(1620%, -1210%)
 }
-#file
+.arrow-left i
 {
-    display: none;
-}
-#uploadBtn
-{
-    height: 40px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    color: WHITE;
-    line-height: 30px;
-    font-family: sans-serif;
-    font-size: 13px;
-    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
     cursor: pointer;
-    display: none;
 }
-.main-profile-right
+.page-right
 {
-    width: 30vw;
-    transform: translate(160%, -190%);
+    transform: translateY(7%);
 }
-.phone-joined-on h3
+.title h1
 {
-    color:rgba(152, 149, 149, 0.757);
-    font-weight: lighter;
+    width: 13vw;
+    transform: translate(271%, -740%);
 }
-.lengkapi-section
+.judul 
 {
-    width: 25vw;
-    transform: translate(140%, -150%);
+    width: 6vw;
+    transform: translate(585%, -850%);
 }
-.bidang-diminati h2
+.judul h1
 {
-    transform: translate(10%, 20%);
+    font-size: 26px;
 }
-.bidang-diminati h4
+.lokasi
 {
-    transform: translateY(60%);
+    width: 6vw;
+    transform: translate(1085%, -955%);
 }
-mark
+.lokasi h1
 {
-    background:#f7d390;
+    font-size: 26px;
 }
-.sosial-media h1
+.judul-portfolio
 {
-    transform: translate(35%, -200%);
+    width: 12vw;
+    transform: translate(293%, -1200%);
 }
-.instagram
+.judul-portfolio h3
 {
-    transform: translate(35%, -340%)
+    font-weight: 500;
+    font-size: 20px;
 }
-.instagram i
+.lokasi-portfolio
 {
-    font-size: 2vw;
-    padding-right: 1vw;
-    margin-right: 1.5vw;
-    transform: translateY(410%); 
+    width: 12vw;
+    transform: translate(543%, -1300%);
 }
-.instagram h4
+.lokasi-portfolio h3
 {
-    width: 10vw;
-    transform: translate(45%, 420%);
-    font-weight: lighter;
+    font-weight: 500;
+    font-size: 20px;
 }
-.facebook
+.durasi
 {
-    transform: translate(35%, -270%)
+    width: 6vw;
+    transform: translate(583%, -920%);
 }
-.facebook i
+.durasi h1
 {
-    font-size: 2vw;
-    padding-right: 1vw;
-    margin-right: 1.25vw;   
-    transform: translateY(320%);  
+    font-size: 26px;
 }
-.facebook h4
+.durasi-mulai   
 {
-    width: 8vw;
-    transform: translate(57%, 305%);
-    font-weight: lighter;
+    width: 5vw;
+    transform: translate(700%, -1220%);
 }
-.twitter
+.durasi-mulai h4
 {
-    transform: translate(35%, -300%)
+    font-size: 20px;
+    color: #898989;
+    font-weight: 300;
 }
-.twitter i
+.durasi-akhir
 {
-    font-size: 2vw;
-    padding-right: 1vw;
-    margin-right: 1.25vw; 
-    transform: translateY(360%);  
+    width: 4vw;
+    transform: translate(1630%, -1330%);
 }
-.twitter h4
+.durasi-akhir h4
 {
-    width: 10vw;
-    transform: translate(45%, 340%);
-    font-weight: lighter;
+    font-size: 20px;
+    color: #898989;
+    font-weight: 300;
 }
-.website
+.durasi-mulai-portfolio
 {
-    transform: translate(35%, -230%)
+    width: 11vw;
+    transform: translate(318%, -1275%);
 }
-.website i
+.durasi-mulai-portfolio h3
 {
-    font-size: 2vw;
-    padding-right: 1vw;
-    margin-right: 1.25vw;   
-    transform: translateY(265%); 
+    font-weight: 500;
+    font-size: 20px;
 }
-.website h4
+.durasi-akhir-portfolio
+{
+    width: 11vw;
+    transform: translate(593%, -1375%);
+}
+.durasi-akhir-portfolio h3
+{
+    font-weight: 500;
+    font-size: 20px;
+}
+.deskripsi 
+{
+    width: 9vw;
+    transform: translate(387%, -1000%);
+}
+.deskripsi h1
+{
+    font-size: 26px;
+}
+.deskripsi-portfolio    
+{
+    width: 55vw;
+    transform: translate(63.3%, -420%);
+}
+.deskripsi-portfolio p
+{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+}
+.portfolio-img  
+{
+    width: 18vw;
+    transform: translate(193%, -130%);
+}
+.portfolio-img img
 {
     width: 15vw;
-    transform: translate(30%, 240%);
-    font-weight: lighter;
 }
-
+.catatan-lainnya-core
+{
+    transform: translateY(170%);
+}
+.catatan-lainnya
+{
+    width: 16vw;
+    transform: translate(327%, -1500%);
+}
+.catatan-lainnya h1
+{
+    font-size: 26px;
+}
+.catatan-lainnya-portfolio
+{
+    width: 38vw;
+    transform: translate(138%, -480%);
+}
+.catatan-lainnya-portfolio p
+{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+}

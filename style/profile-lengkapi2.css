@@ -203,159 +203,13 @@ transform: translateY(2px);
     border-radius: 10px;
     box-shadow: 0px 3px rgba(204, 204, 204, 0.401);
 }
-.navbar-left
-{
-    display: flex;
-    flex-direction: row;
-}
-#navbar-logo
-{
-    width: 12vw;
-    transform: translate(20%, 40%);
-}
-.search-bar-container
-{
-    width: 17vw;
-    height: 2vw;
-}
-.search-box
-{
-    /* position: relative; */
-    background-color: white;
-    width: 15vw;
-    padding-left: 4vw;
-    padding-bottom: 0.2vw;
-    height: 2vw;
-    z-index: -1;
-    transform: translate(35%, 20%);
-    border: none;
-    border-radius: 0.4vw;
-}
-#search-icon
-{
-    position: relative;
-    font-size: 1.2vw;
-    transform: translateX(600%);
-    transform: translateY(190%);
-    z-index: 1;
-    margin-left: 8vw;
-}
-#home-icon
-{
-    color: #1a1a1a;
-}
-.navbar-right a 
-{
-    text-decoration: none;
-    color: #1a1a1a;
-}
-.navbar-right
-{
-    display: flex;
-    flex-direction: row;
-    margin-left: 43vw;
-    margin-top: -1.4vw;
-}
-#home-button:hover::after
-{
-    width: 100%;
-}
-#home-button::after
-{
-    content: ' ';
-    width: 0%;
-    height: 4px;
-    background: #FFCA6B;
-    display: block;
-    transition: 0.5s;
-}
-#home-icon
-{
-    padding-right: 0.3vw;
-}
-#favorite-icon
-{
-    padding-right: 0.3vw;
-}
-#favorit-button:hover::after
-{
-    width: 100%;
-}
-#favorit-button::after
-{
-    content: ' ';
-    width: 0%;
-    height: 4px;
-    background: #FFCA6B;
-    display: block;
-    transition: 0.5s;
-}
-#upload-icon
-{
-    padding-right: 0.3vw;
-}
-#unggah-button:hover::after
-{
-    width: 100%;
-}
-#unggah-button::after
-{
-    content: ' ';
-    width: 0%;
-    height: 4px;
-    background: #FFCA6B;
-    display: block;
-    transition: 0.5s;
-}
-#bell-icon
-{
-    padding-right: 0.3vw;
-}
-#notifikasi-button:hover::after
-{
-    width: 100%;
-}
-#notifikasi-button::after
-{
-    content: ' ';
-    width: 0%;
-    height: 4px;
-    background: #FFCA6B;
-    display: block;
-    transition: 0.5s;
-}
-.navbar-options-right
-{
-    padding-right: 4vw;
-}
-.profile-btn
-{
-    width: 6vw;
-    height: 2.3vw;
-    font-size: 1vw;
-    margin-top: -0.4vw;
-    transform: translateX(60%);
-    background: #1a1a1a;
-    color: #FFCA6B;
-    border-radius: 5px;
-    border: #1a1a1a00;
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-.profile-btn:hover
-{
-    background:#f7d390;
-    color: #1a1a1a;
-}
-
-
 #pengaturan-profilmu
 {
     transform: translate(5%, 400%);
 }
 .buttons-left
 {
-    transform: translate(5%, 90%);
+    transform: translate(5%, 100%);
     display: flex;
     flex-direction: column;
 }
@@ -372,6 +226,11 @@ transform: translateY(2px);
     box-shadow: 2px 3px rgba(128, 128, 128, 0.288);
     border-width: 0.2px;
     cursor: pointer;
+    background: white;
+    transition: 0.2s ease-in;
+}
+#profilmu:hover
+{
     background: #f7d390;
 }
 #lengkapi-profilmu
@@ -388,7 +247,7 @@ transform: translateY(2px);
     border-color: rgba(128, 128, 128, 0.288);
     box-shadow: 2px 3px rgba(128, 128, 128, 0.288);
     border-width: 0.2px;
-    background: white;
+    background: #f7d390;
     transition: 0.2s ease-in;
 }
 #lengkapi-profilmu:hover
@@ -487,7 +346,7 @@ transform: translateY(2px);
 {
     padding-left: 8vw;
     margin-top: -1.5vw;
-    transform: translateY(1600%);
+    transform: translateY(1400%);
 }
 .line
 {
@@ -496,144 +355,127 @@ transform: translateY(2px);
     margin-top: 10vw;
     padding-bottom: 0.2vw;
     color:#ccccccc1;
+
 }
-.profile-pic-div
+#prev-arrow
 {
-    height: 10vw;
-    width: 10vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid grey;
-    transform: translate(-140%, -170%);
+    font-size: 25px;
+    transform: translateX(7500%);
 }
-#photo
+#next-arrow
 {
-    height: 100%;
-    width: 100%;
+    font-size: 25px;
+    transform: translateX(8400%);
 }
-#file
+.page-right
 {
-    display: none;
+    transform: translateY(25%);
 }
-#uploadBtn
+.title h1
 {
-    height: 40px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    color: WHITE;
-    line-height: 30px;
-    font-family: sans-serif;
-    font-size: 13px;
-    font-family: 'DM Sans', sans-serif;
-    cursor: pointer;
-    display: none;
+    width: 23vw;
+    transform: translate(150%, -740%);
 }
-.main-profile-right
+.verifikasi-akun h1
 {
-    width: 30vw;
-    transform: translate(160%, -190%);
+    font-size: 26px;
+    width: 14vw;
+    transform: translate(247%, -750%);
 }
-.phone-joined-on h3
+.verifikasi-akun p
 {
-    color:rgba(152, 149, 149, 0.757);
-    font-weight: lighter;
+    width: 36vw;
+    color: #898989;
+    transform: translate(96%, -590%);
 }
-.lengkapi-section
+.unggah-foto-diri h1
 {
-    width: 25vw;
-    transform: translate(140%, -150%);
-}
-.bidang-diminati h2
-{
-    transform: translate(10%, 20%);
-}
-.bidang-diminati h4
-{
-    transform: translateY(60%);
-}
-mark
-{
-    background:#f7d390;
-}
-.sosial-media h1
-{
-    transform: translate(35%, -200%);
-}
-.instagram
-{
-    transform: translate(35%, -340%)
-}
-.instagram i
-{
-    font-size: 2vw;
-    padding-right: 1vw;
-    margin-right: 1.5vw;
-    transform: translateY(410%); 
-}
-.instagram h4
-{
-    width: 10vw;
-    transform: translate(45%, 420%);
-    font-weight: lighter;
-}
-.facebook
-{
-    transform: translate(35%, -270%)
-}
-.facebook i
-{
-    font-size: 2vw;
-    padding-right: 1vw;
-    margin-right: 1.25vw;   
-    transform: translateY(320%);  
-}
-.facebook h4
-{
+    font-size: 26px;
+    font-weight: 500;
     width: 8vw;
-    transform: translate(57%, 305%);
-    font-weight: lighter;
+    transform: translate(432%, -670%);
 }
-.twitter
+.unggah-foto-ktp h1
 {
-    transform: translate(35%, -300%)
+    font-size: 26px;
+    font-weight: 500;
+    width: 8vw;
+    transform: translate(850%, -770%);
 }
-.twitter i
+.alamat-rumah h1
 {
-    font-size: 2vw;
-    padding-right: 1vw;
-    margin-right: 1.25vw; 
-    transform: translateY(360%);  
+    font-size: 26px;
+    font-weight: 500;
+    width: 14vw;
+    transform: translate(246%, -560%);
 }
-.twitter h4
+#foto-diri
 {
-    width: 10vw;
-    transform: translate(45%, 340%);
-    font-weight: lighter;
+    width: 20vw;
+    padding-left: 1vw;
+    padding-right: 3vw;
+    height: 2.4vw;
+    border-radius: 9px;
+    border-color: #D9D9D9;
+    font-size: 17px;
+    border-style: solid;
+    transform: translate(142%, -720%);
 }
-.website
+#foto-ktp
 {
-    transform: translate(35%, -230%)
+    width: 20vw;
+    padding-left: 1vw;
+    padding-right: 3vw;
+    height: 2.4vw;
+    border-radius: 9px;
+    border-color: #D9D9D9;
+    font-size: 17px;
+    border-style: solid;
+    transform: translate(178%,-720%);
 }
-.website i
+#alamat-rumah
 {
-    font-size: 2vw;
-    padding-right: 1vw;
-    margin-right: 1.25vw;   
-    transform: translateY(265%); 
+    width: 20vw;
+    padding-left: 1vw;
+    padding-right: 3vw;
+    height: 2.4vw;
+    border-radius: 9px;
+    border-color: #D9D9D9;
+    font-size: 17px;
+    border-style: solid;
+    transform: translate(-60.5%, -450%);
 }
-.website h4
+::placeholder
+{
+    color: rgba(204, 204, 204, 0.825);
+}
+#upload-1
+{
+    font-size: 22px;
+    transform: translate(-950%, -1255%)
+}
+#upload-2
+{
+    font-size: 22px;
+    transform: translate(680%, -1255%);
+}
+#tombol-unggah
 {
     width: 15vw;
-    transform: translate(30%, 240%);
-    font-weight: lighter;
+    height: 2.7vw;
+    font-size: 25px;
+    color:#FFCA6B;
+    background: #1a1a1a;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #89898900;
+    transform: translate(370%, -330%);
+    cursor: pointer;
+    transition: 0.2s ease-in;
 }
-
+#tombol-unggah:hover
+{
+    background: #FFCA6B;
+    color: #1a1a1a;
+}
