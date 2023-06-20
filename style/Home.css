@@ -1241,4 +1241,7 @@ nav ul li a:hover {
   #ham {
     display: block;
   }
+  nav ul li a:hover {
+    color: #f7d390;
+  }
 }
