@@ -39,7 +39,9 @@ document.getElementById("form-field").addEventListener("submit", (event) => {
     var jsonArray = storedData ? JSON.parse(storedData) : []
     jsonArray.push(user);
     localStorage.setItem('user', JSON.stringify(jsonArray));
+    console.log(jsonArray)
     window.location.href = '/View/Home.html'
+    // localStorage.clear()
 
 });
 
