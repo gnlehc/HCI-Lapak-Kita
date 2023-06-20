@@ -16,7 +16,6 @@ body {
 }
 .page-container {
   width: 100%;
-  min-height: 200vw;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -98,6 +97,8 @@ nav ul li a:hover {
   border: none;
   transition: 400ms;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
 }
 .profil:hover {
   background-color: #ffca6b;
