@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lowongan Pekerjaan</title>
+    <link rel="stylesheet" href="../style/semualoker.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="header">
+        <p>Lowongan Pekerjaan</p>
+        <div class="header-yellow"></div>
+      </div>
+
+      <div class="container-contents">
+        <div class="left">
+          <div class="search-container">
+            <img src="../assets/search.png" alt="" />
+            <input
+              type="text"
+              placeholder="Cari pekerjaan sesuai minatmu!"
+              name="search" />
+          </div>
+
+          <div class="search-recommendations">
+            <div id="search-rec"></div>
+            <div id="search-rec-two"></div>
+          </div>
+
+          <div class="rekomendasi-pekerjaan">
+            <div class="header-rekomendasi-pekerjaan">
+              <p>Rekomendasi Pekerjaan</p>
+            </div>
+            <div class="kategorimu">
+              <p>Kategorimu:</p>
+            </div>
+            <div class="rekomendasi-opts">
+              <div id="opts"></div>
+              <!-- <div class="opts"></div>
+              <div class="opts"></div> -->
+            </div>
+            <div class="cards">
+              <div id ="cards-all-loker"></div>
+              <div class="cards-loker"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="trending">
+            <div class="header-trending">
+              <p>Trending Minggu Ini</p>
+            </div>
+            <div class="subheader-trending">
+              <p>Jelajahi pekerjaan freelancing paling <i>trending</i> minggu ini!</p>
+            </div>
+
+            <div class="cards-trending">
+              <div class="trending-card">
+                <p>#1</p>
+                <div class="text-trending">
+                  <p>Model Catalog - Wanita Medium Sized</p>
+                  <div class="butuh-segera">
+                    <p>Butuh Segera</p>
+                  </div>
+                  <div class="place-loc">
+                    <p>Lunette Couture</p>
+                    <p id = "loc-trending">Jakarta, Indonesia</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="trending-card">
+                <p>#2</p>
+                <div class="text-trending">
+                  <p>Model Catalog - Pria Medium Sized</p>
+                  <div class="butuh-segera">
+                    <p>Butuh Segera</p>
+                  </div>
+                  <div class="place-loc">
+                    <p>Lunette Couture</p>
+                    <p id = "loc-trending">Jakarta, Indonesia</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="trending-card">
+                <p>#3</p>
+                <div class="text-trending">
+                  <p>Instagram Makeup Content Creator</p>
+                  <div class="aktif">
+                    <p>Mencari dengan Aktif</p>
+                  </div>
+                  <div class="place-loc">
+                    <p>Somethinc</p>
+                    <p id = "loc-trending">Jakarta, Indonesia</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="favorit">
+            <img src="../assets/favorites.png" alt="">
+            <p>Favorit</p>
+          </div>
+
+          <div class="favorite-text">
+            <p>Pekerjaan yang kamu tandai sebelumnya.</p>
+          </div>
+
+          <div id="favorite-cards"></div>
+          
+        </div>
+      </div>
+    </div>
+
+  
+    <script src="../scripts/semua-loker.js"></script>
+  </body>
+</html>
