@@ -364,6 +364,7 @@ body
     transform: translate(37%, -710%);
     font-weight: 500;
 }
+
 .bidang-diminati h4
 {
     background: #f7d390;
@@ -388,6 +389,7 @@ body
     font-size: 2vw;
     padding-right: 1vw;
     margin-right: 1.5vw;
+
     transform: translateY(400%);
 }
 .instagram h4
@@ -404,6 +406,7 @@ body
 {
     font-size: 2vw;
     padding-right: 1vw;
+
     margin-right: 1.25vw;  
     transform: translateY(320%);  
 }
@@ -421,6 +424,7 @@ body
 {
     font-size: 2vw;
     padding-right: 1vw;
+
     margin-right: 1.25vw; 
     transform: translateY(350%);   
 }
@@ -438,6 +442,7 @@ body
 {
     font-size: 2vw;
     padding-right: 1vw;
+
     margin-right: 1.25vw;  
     transform: translateY(270%);  
 }
