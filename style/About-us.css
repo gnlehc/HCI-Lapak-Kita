@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+.body-container{
+    padding-left: 8vw;
+    padding-right: 8vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    gap: 4vw;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    justify-self: flex-start;
+    align-items: center;
+}
+
+.header img{
+    width: 20vw;
+}
+.header p{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 2.5vw;
+}
+
+.text-lapak-kita{
+    text-align: justify;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 1.5vw;
+    width: 40vw;
+}
+
+.images img{
+    width: 40vw;
+}
+
+
+.yellow-grad{
+    z-index:-1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20vw;
+    margin-top: -20vw;
+    height: 25vw;
+    width: 100vw;
+    background: rgb(255,236,202);
+    background: linear-gradient(0deg, rgba(255,236,202,1) 0%, rgba(255,255,255,1) 100%);
+}
+

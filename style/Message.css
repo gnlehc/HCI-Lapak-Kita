@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.body-container{
+    display: flex;
+    flex-direction:column;
+    padding-top: 2vw;
+}
+.header{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    z-index:-1;
+    top: 0;
+    height: 5vw;
+    width: 100%;
+    background: #FFE5B5;
+    font-family: 'DM Sans';
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: 2vw;
+}
+
+.header p{
+    margin-left: 4vw;
+}
+
+
+.shop-info{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-bottom: 2vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1.2vw;
+}
+
+.shop-info img{
+    width: 5vw;
+    height: 5vw;
+}
+
+.text-shop-info p{
+    font-size: 1.75vw;
+    font-weight: 700;
+    font-family: 'DM Sans';
+}
+
+.type-activity p{
+    font-size: 1.2vw;
+    font-weight: 400;
+    font-family: 'DM Sans';
+}
+
+.type-activity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    gap: 0.5vw;
+}
+
+.greeting p{
+    font-size: 1.5vw;
+    font-weight: 400;
+    font-family: 'DM Sans';
+}
+
+.circle {
+    width: 0.75vw;
+    height: 0.75vw;
+    border-radius: 50%;
+    display: inline-block;
+    
+}
+
+.green {
+    background-color: #1BC117;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.arrow{
+    padding-left: 25vw;
+    display: flex;
+    align-items: center;
+
+}
+.arrow img{
+    width: 0.7355vw;
+    cursor: pointer;
+    height: 1.14649vw;
+}
