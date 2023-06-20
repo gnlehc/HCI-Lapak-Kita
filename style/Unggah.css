@@ -8,18 +8,11 @@ body {
 }
 .page-container {
   width: 100%;
-  min-height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
 }
 #hamburger {
   display: none;
-}
-.page-container {
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-  box-sizing: border-box;
 }
 
 .navbar {
