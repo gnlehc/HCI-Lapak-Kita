@@ -13,22 +13,31 @@ body {
     #ffe5b5 0%,
     #ffe5b5 30%
   );
+  overflow-x: hidden;
 }
-.logo {
-  display: inline;
-  position: absolute;
-  padding: 4vw;
-  left: 64%;
-}
-.fill-info {
-  position: absolute;
-  align-items: flex-start;
-  align-self: center;
+.g-signin2 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.4vw;
+  margin-right: 44%;
+}
+.logo {
+  position: relative;
+  padding: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  right: 18vw;
+}
+.fill-info {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  align-self: center;
+  flex-direction: column;
   margin-left: 6vw;
-  padding: 12vw 0;
-  /* padding-bottom: 9rem; */
 }
 .fill-info h1 {
   display: flex;
@@ -39,9 +48,7 @@ body {
 .fill-info p {
   font-family: "Poppins", sans-serif;
 }
-#form-login {
-  padding-top: 16vw;
-}
+
 .input-box {
   position: relative;
   align-items: flex-start;
@@ -75,15 +82,16 @@ body {
   text-align: left;
 }
 .login {
+  left: 8vw;
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 2vw;
 }
 button {
-  margin-left: 6vw;
-  margin-right: 50vw;
+  width: 40vw;
+  height: 2.6vw;
   border-radius: 6px;
-  padding: 0.6vw 0 0.6vw 0;
   background-color: #f7c873;
   border: none;
   box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.05);
@@ -102,7 +110,10 @@ button:active {
 }
 .forgot a {
   font-size: smaller;
-  padding: 0.8vw 42.2% 0.6vw;
+  padding-right: 8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #ffa400;
 }
 .forgot a:hover {
@@ -159,9 +170,8 @@ button:active {
   color: red;
 }
 #show-password {
-  /* position: relative; */
-  /* margin-right: 2vw; */
-  transform: translate(4100%, -190%);
+  transform: translate(44vw, -2vw);
+  /* float: right; */
   cursor: pointer;
 }
 @-webkit-keyframes flash {
@@ -180,7 +190,106 @@ button:active {
     opacity: 1;
   }
 }
+@media screen and (max-width: 375px) {
+  body {
+    background: none;
+  }
+  .g-signin2 {
+    margin-left: 40%;
+  }
+  .logo {
+    align-items: flex-start;
+    right: 0vw;
+  }
 
-#data{
-  display: none;
+  .input-box {
+    margin-left: 4vw;
+    margin-bottom: 1vw;
+  }
+  .input-box input {
+    width: 44vw;
+    height: 4vw;
+  }
+
+  button {
+    width: 84vw;
+    height: 8vw;
+  }
+  .forgot a {
+    padding-right: 14vw;
+  }
+  .component {
+    display: none;
+  }
+
+  .between {
+    line-height: 1vw;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: 1;
+  }
+
+  #error {
+    color: red;
+  }
+  #show-password {
+    cursor: pointer;
+  }
+  .or {
+    left: 0vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .g-signin2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.4vw;
+  }
+  .logo {
+    align-items: flex-start;
+    right: 0vw;
+  }
+  .fill-info {
+    top: 4vw;
+  }
+
+  .input-box {
+    margin-left: 8vw;
+    margin-bottom: 1vw;
+  }
+  .input-box p {
+    font-size: 18px;
+    margin-bottom: 0.4vw;
+    margin-top: 1vw;
+  }
+  .input-box input {
+    width: 80vw;
+    height: 8vw;
+  }
+
+  .login {
+    padding-top: 4vw;
+  }
+  .forgot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .component {
+    display: none;
+  }
+
+  #show-password {
+    transform: translate(-20vw, -8vw);
+    float: right;
+  }
 }
