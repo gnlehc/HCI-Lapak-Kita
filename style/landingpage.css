@@ -508,7 +508,9 @@ body
 #commiskey
 {
     margin-top: 70px;
-    margin-left: 170px;
+
+    margin-left: 180px;
+    width: 25%;
 }
 .communication-right
 {

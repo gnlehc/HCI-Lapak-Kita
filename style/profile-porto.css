@@ -189,6 +189,10 @@ body
     box-shadow: 2px 3px rgba(128, 128, 128, 0.288);
     border-width: 0.2px;
     cursor: pointer;
+    background: white;
+}
+#profilmu:hover
+{
     background: #f7d390;
 }
 #lengkapi-profilmu
@@ -205,7 +209,7 @@ body
     border-color: rgba(128, 128, 128, 0.288);
     box-shadow: 2px 3px rgba(128, 128, 128, 0.288);
     border-width: 0.2px;
-    background: white;
+    background: #f7d390;
     transition: 0.2s ease-in;
 }
 #lengkapi-profilmu:hover
@@ -298,158 +302,94 @@ body
     padding-bottom: 0.2vw;
     color:#ccccccc1;
 }
-.profile-pic-div
+.title h1
 {
-    height: 10vw;
-    width: 10vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid grey;
-    transform: translate(-140%, -170%);
+    width: 23vw;
+    transform: translate(150%, -740%);
 }
-#photo
+.bidang-diminati h1
 {
-    height: 100%;
-    width: 100%;
+    font-size: 26px;
+    width: 22vw;
+    transform: translate(165%, -730%);
 }
-#file
+.bidang-diminati input
 {
-    display: none;
-}
-#uploadBtn
-{
-    height: 40px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    color: WHITE;
-    line-height: 30px;
-    font-family: sans-serif;
-    font-size: 13px;
-    font-family: 'DM Sans', sans-serif;
-    cursor: pointer;
-    display: none;
-}
-.user-name
-{
-    transform: translate(49%, -680%);
-}
-.phone-joined-on h3
-{
-    color:rgba(152, 149, 149, 0.757);
-    font-weight: lighter;
-}
-.phone-joined-on
-{
-    transform: translate(49%, -1135%);
-}
-.email 
-{
-    transform: translate(49%, -870%);
-}
-.lengkapi h1
-{
-    transform: translate(35%, -550%);
-}
-.bidang-diminati h2
-{
-    transform: translate(37%, -710%);
-    font-weight: 500;
-}
-
-.bidang-diminati h4
-{
-    background: #f7d390;
-    width: 8.8vw;
-    transform: translate(416%, -1040%);
-    font-weight: lighter;
-}
-.bidang-diminati mark
-{
-    background-color: #f7d390;
+    transform: translate(125%, -590%);
+    padding-left: 1vw;
+    padding-right: 14vw;
+    height: 2.5vw;
+    border-radius: 9px;
+    border-color: #D9D9D9;
+    font-size: 17px;
 }
 .sosial-media h1
 {
-    transform: translate(35%, -450%);
+    font-size: 26px;
+    width: 12vw;
+    transform: translate(300%, -530%);
 }
-.instagram
+#instagram-username
 {
-    transform: translate(35%, -540%)
+    width: 20vw;
+    padding-left: 1vw;
+    padding-right: 14vw;
+    height: 2.5vw;
+    border-radius: 9px;
+    border-color: #D9D9D9;
+    font-size: 17px;
+    transform: translate(110%, -410%);
 }
-.instagram i
+#twitter-username
 {
-    font-size: 2vw;
-    padding-right: 1vw;
-    margin-right: 1.5vw;
-
-    transform: translateY(400%);
+    width: 20vw;
+    padding-left: 1vw;
+    padding-right: 14vw;
+    height: 2.5vw;
+    border-radius: 9px;
+    border-color: #D9D9D9;
+    font-size: 17px;
+    transform: translate(9%, -270%);
 }
-.instagram h4
+#facebook-username
 {
-    width: 10vw;
-    transform: translate(45%, 420%);
-    font-weight: lighter;
+    width: 20vw;
+    padding-left: 1vw;
+    padding-right: 14vw;
+    height: 2.5vw;
+    border-radius: 9px;
+    border-color: #D9D9D9;
+    font-size: 17px;
+    transform: translate(110%, -230%);
 }
-.facebook
+#website-username
 {
-    transform: translate(35%, -470%)
+    width: 20vw;
+    padding-left: 1vw;
+    padding-right: 14vw;
+    height: 2.5vw;
+    border-radius: 9px;
+    border-color: #D9D9D9;
+    font-size: 17px;
+    transform: translate(9%, -93%);
 }
-.facebook i
+#instagram-icon
 {
-    font-size: 2vw;
-    padding-right: 1vw;
-
-    margin-right: 1.25vw;  
-    transform: translateY(320%);  
+    font-size: 30px;
+    transform: translate(1950%, -310%);
 }
-.facebook h4
+#twitter-icon
 {
-    width: 8vw;
-    transform: translate(57%, 305%);
-    font-weight: lighter;
+    font-size: 30px;
+    transform: translate(1600%, -120%);
 }
-.twitter
+#facebook-icon
 {
-    transform: translate(35%, -500%)
+    font-size: 30px;
+    transform: translate(1484%, 62%);
 }
-.twitter i
+#website-icon
 {
-    font-size: 2vw;
-    padding-right: 1vw;
-
-    margin-right: 1.25vw; 
-    transform: translateY(350%);   
+    font-size: 30px;
+    transform: translate(1371%, 242%);
 }
-.twitter h4
-{
-    width: 10vw;
-    transform: translate(45%, 340%);
-    font-weight: lighter;
-}
-.website
-{
-    transform: translate(35%, -430%)
-}
-.website i
-{
-    font-size: 2vw;
-    padding-right: 1vw;
-
-    margin-right: 1.25vw;  
-    transform: translateY(270%);  
-}
-.website h4
-{
-    width: 15vw;
-    transform: translate(30%, 240%);
-    font-weight: lighter;
-}
-
