@@ -17,29 +17,29 @@ body
 }
 #hamburger {
     display: none;
-  }
+}
 
 .navbar {
-background-color: white;
-width: 90%;
-display: flex;
-flex-direction: row;
-gap: 2vw;
-align-items: center;
-padding-left: 3vw;
-z-index: 1;
-box-shadow: 0px 3px rgba(204, 204, 204, 0.401);
-position: fixed;
+    background-color: white;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+    padding-left: 3vw;
+    z-index: 1;
+    box-shadow: 0px 3px rgba(204, 204, 204, 0.401);
+    position: fixed;
 }
 
 .logo {
-width: 150px;
+    width: 150px;
 }
 
 nav {
-flex: 1;
-text-align: right;
-z-index: 1;
+    flex: 1;
+    text-align: right;
+    z-index: 1;
 }
 nav ul {
 margin-bottom: 2%;
@@ -61,7 +61,7 @@ color: #1a1a1a;
 nav ul li:nth-child(1) {
 color: #1a1a1a;
 }
-nav ul li:nth-child(3)::after {
+/* nav ul li:nth-child(3)::after {
 content: "";
 height: 2px;
 width: 100%;
@@ -71,7 +71,7 @@ position: absolute;
 left: 0;
 bottom: -3px;
 transition: 100ms ease-in;
-}
+} */
 nav ul li a::after {
 content: "";
 height: 2px;
@@ -203,270 +203,177 @@ transform: translateY(2px);
     border-radius: 10px;
     box-shadow: 0px 3px rgba(204, 204, 204, 0.401);
 }
-#pengaturan-profilmu
-{
-    transform: translate(5%, 400%);
+/*  */
+
+
+/* Coding nya amanda */
+
+.body-container{
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
 }
-.buttons-left
-{
-    transform: translate(5%, 100%);
+
+
+.left, .right{
+    margin-top: 10vw;
     display: flex;
     flex-direction: column;
 }
-#profilmu
-{
+
+.header p{
+    font-size: 1.75vw;
+    font-weight: 700;
+    
+}
+
+.opts{
+    margin-top: 6vw;
     display: flex;
-    width: 20vw;
-    margin-bottom: 2vw;
-    padding-left: 2vw;
-    height: 2.5vw;
-    padding-top: 0.3vw;
+    flex-direction: column;
+    gap: 1vw;
+
+}
+
+button{
+    padding: 1vw 0.5vw;
+    width: 16vw;
     border-radius: 0.5vw;
-    border-color: rgba(128, 128, 128, 0.288);
-    box-shadow: 2px 3px rgba(128, 128, 128, 0.288);
-    border-width: 0.2px;
+    border-color: rgba(224, 224, 224, 0.288);
+    box-shadow: 0.1vw 0.1vw rgba(224, 224, 224, 0.288);
+    border-width: 0.1vw;
     cursor: pointer;
     background: white;
-}
-#profilmu:hover
-{
-    background: #f7d390;
-}
-#lengkapi-profilmu
-{
     display: flex;
-    width: 20vw;
-    margin-bottom: 2vw;
-    padding-left: 2vw;
-    height: 2.5vw;
-    padding-top: 0.3vw;
-    border-radius: 0.5vw;
-    border-width: 0.2px;
-    cursor: pointer;
-    border-color: rgba(128, 128, 128, 0.288);
-    box-shadow: 2px 3px rgba(128, 128, 128, 0.288);
-    border-width: 0.2px;
-    background: #f7d390;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+
+}
+
+button a{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+button img{
+    width: 2vw;
+    height: max-content;
+    margin-left: 1vw;
+}
+
+#portofoliomu img{
+    width: 1.5vw;
+    height: max-content;
+    margin-left: 1.2vw;
+    margin-right: 0.2vw;
+}
+#lengkapi-profilmu{
+    background: #FFE5B5;
     transition: 0.2s ease-in;
 }
+
 #lengkapi-profilmu:hover
 {
     background: #f7d390;
 }
-#lengkapi-profilmu a
-{
-    text-decoration: none;
-    color: #1a1a1a;
-}
-#portofoliomu a
-{
-    text-decoration: none;
-    color: #1a1a1a;
-}
-#profilmu a
-{
-    text-decoration: none;
-    color: #1a1a1a;
-}
-#portofoliomu
-{
-    display: flex;
-    width: 20vw;
-    padding-left: 2vw;
-    height: 2.5vw;
-    padding-top: 0.3vw;
-    border-radius: 0.5vw;
-    border-width: 0.2px;
-    cursor: pointer;
-    border-color: rgba(128, 128, 128, 0.288);
-    box-shadow: 2px 3px rgba(128, 128, 128, 0.288);
-    border-width: 0.2px;
-    background: white;
-    transition: 0.2s ease-in;
-}
-#portofoliomu:hover
-{
-    background: #f7d390;
-}
-#keluar-akun
-{
-    display: flex;
-    width: 20vw;
-    transform: translateY(700%);
-    padding-left: 2vw;
-    height: 2.5vw;
-    padding-top: 0.3vw;
-    border-radius: 0.5vw;
-    border-width: 0.2px;
-    cursor: pointer;
-    border-color: rgba(128, 128, 128, 0.288);
-    box-shadow: 2px 3px rgba(128, 128, 128, 0.288);
-    border-width: 0.2px;
+
+#keluar-akun{
+    margin-top: 12vw;
     background: #FFC1C1;
 }
-#user-icon
-{
-    font-size: 1.3vw;
-    margin-right: 2vw;
-    margin-left: -0.5vw;
-    margin-top: 0.3vw;
+
+#keluar-akun a{
+    margin-left: 1vw;
 }
-#clipboard-icon
-{
-    font-size: 1.3vw;
-    margin-right: 2vw;
-    margin-left: -0.4vw;
-    margin-top: 0.3vw;
+
+#keluar-akun img{
+    width: 2vw;
+    height: max-content;
 }
-#file-icon
-{
-    font-size: 1.3vw;
-    margin-right: 2vw;
-    margin-left: -0.4vw;
-    margin-top: 0.3vw;
+input{
+    margin-top: 1vw;
+    background-color: white;
+    border: 0.1vw solid #ebebeb;
+    border-radius: 0.75vw;
+    padding: 0.75vw 1vw;
+    width: 40vw;
 }
-#arrow-right1
-{
-    transform: translate(8vw, 0.5vw);
+
+.posisi-yang-diminati input{
+    width: 43vw;
 }
-#arrow-right2
-{
-    transform: translate(1.2vw, 0.5vw)
+
+input::placeholder{
+    font-size: 1vw;
 }
-#arrow-right3
-{
-    transform: translate(4.9vw, 0.5vw)
+
+
+.sosial-media{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
 }
-#logout
-{
-    transform: translate(7.8vw, 0.5vw)
+
+.icons{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6vw;
 }
-.random-line
-{
-    padding-left: 8vw;
-    margin-top: -1.5vw;
-    transform: translateY(1400%);
+
+.med-sos{
+    margin-top: 2vw;
 }
-.line
-{
-    transform: rotate(90deg) translateY(-100%);
-    padding-left: 2vw;
-    margin-top: 10vw;
-    padding-bottom: 0.2vw;
-    color:#ccccccc1;
+
+.posisi-yang-diminati{
+    margin-top: 4vw;
 }
-#prev-arrow
-{
-    font-size: 25px;
-    transform: translateX(7500%);
+
+.instagram, .linked-in, .website{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-#next-arrow
-{
-    font-size: 25px;
-    transform: translateX(8400%);
-    cursor: pointer;
+
+.instagram input, .linked-in input, .website input{
+    margin-left: 1vw;
 }
-.page-right
-{
-    transform: translateY(25%);
+.instagram img, .linked-in img, .website img{
+    margin-top: 0.5vw;
+    width: 2vw;
+    height: max-content;
 }
-.title h1
-{
-    width: 23vw;
-    transform: translate(150%, -740%);
+
+.bottom-arrow{
+    margin-top: 3vw;
+    margin-left: 42vw;
+    font-size: 2vw;
+
 }
-.bidang-diminati h1
-{
-    font-size: 26px;
-    width: 22vw;
-    transform: translate(165%, -730%);
-}
-.bidang-diminati input
-{
-    transform: translate(125%, -590%);
-    padding-left: 1vw;
-    padding-right: 14vw;
-    height: 2.4vw;
-    border-radius: 9px;
-    border-color: #D9D9D9;
-    font-size: 17px;
-    border-style: solid;
-}
-.sosial-media h1
-{
-    font-size: 26px;
+
+#redirectButton{
+    margin-top: 2vw;
+    background-color: #E5FFE4;
     width: 12vw;
-    transform: translate(300%, -530%);
+    font-size: 1.2vw;
+    color: #1BC117;
+    font-weight: 700;
+    border-radius: 1vw;
+    border-color: 0;
+    box-shadow: 0;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
 }
-#instagram-username
-{
-    width: 20vw;
-    padding-left: 1vw;
-    padding-right: 14vw;
-    height: 2.4vw;
-    border-radius: 9px;
-    border-color: #D9D9D9;
-    font-size: 17px;
-    transform: translate(110%, -410%);
-    border-style: solid;
-}
-::placeholder
-{
-    color:rgba(204, 204, 204, 0.825);
-}
-#twitter-username
-{
-    width: 20vw;
-    padding-left: 1vw;
-    padding-right: 14vw;
-    height: 2.4vw;
-    border-radius: 9px;
-    border-color: #D9D9D9;
-    font-size: 17px;
-    transform: translate(9%, -270%);
-    border-style: solid;
-}
-#facebook-username
-{
-    width: 20vw;
-    padding-left: 1vw;
-    padding-right: 14vw;
-    height: 2.4vw;
-    border-radius: 9px;
-    border-color: #D9D9D9;
-    font-size: 17px;
-    transform: translate(110%, -230%);
-    border-style: solid;
-}
-#website-username
-{
-    width: 20vw;
-    padding-left: 1vw;
-    padding-right: 14vw;
-    height: 2.4vw;
-    border-radius: 9px;
-    border-color: #D9D9D9;
-    font-size: 17px;
-    transform: translate(9%, -93%);
-    border-style: solid;
-}
-#instagram-icon
-{
-    font-size: 30px;
-    transform: translate(1950%, -295%);
-}
-#twitter-icon
-{
-    font-size: 30px;
-    transform: translate(1600%, -110%);
-}
-#facebook-icon
-{
-    font-size: 30px;
-    transform: translate(1484%, 62%);
-}
-#website-icon
-{
-    font-size: 30px;
-    transform: translate(1371%, 242%);
+
+.line-grey{
+    background-color: #D9D9D9;
+    width: 0.2vw;
+    height: 40vw;
+    margin-top: 10vw;
+
 }
