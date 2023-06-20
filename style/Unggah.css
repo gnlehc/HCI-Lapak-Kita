@@ -3,8 +3,24 @@
   padding: 0px;
   font-family: "DM Sans", sans-serif;
 }
+<<<<<<< HEAD
+body
+{
+    width: 100%;
+}
+.page-container
+{
+    width:100%;
+    min-height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#hamburger {
+  display: none;
+=======
 body {
   width: 100%;
+>>>>>>> e07ed7fed9fca05b7224ba79bdb1818033db5d40
 }
 .page-container {
   width: 100%;
@@ -12,9 +28,12 @@ body {
   overflow: hidden;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
+=======
 #hamburger {
   display: none;
 }
+>>>>>>> e07ed7fed9fca05b7224ba79bdb1818033db5d40
 
 .navbar {
   background-color: white;
@@ -99,8 +118,11 @@ nav ul li a:hover {
   border: none;
   transition: 400ms;
   cursor: pointer;
+<<<<<<< HEAD
+=======
   text-align: center;
   text-decoration: none;
+>>>>>>> e07ed7fed9fca05b7224ba79bdb1818033db5d40
 }
 .profil:hover {
   background-color: #ffca6b;
