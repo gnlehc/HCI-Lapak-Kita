@@ -3,43 +3,71 @@ const img = document.querySelector('#photo');
 const file = document.querySelector('#file');
 const uploadBtn = document.querySelector('#uploadBtn');
 
-//if user hover on img div 
 
-imgDiv.addEventListener('mouseenter', function(){
+imgDiv.addEventListener('mouseenter', function () {
     uploadBtn.style.display = "block";
 });
 
-//if we hover out from img div
 
-imgDiv.addEventListener('mouseleave', function(){
+imgDiv.addEventListener('mouseleave', function () {
     uploadBtn.style.display = "none";
 });
 
-//lets work for image showing functionality when we choose an image to upload
 
-//when we choose a foto to upload
-
-file.addEventListener('change', function(){
-    //this refers to file
+file.addEventListener('change', function () {
     const choosedFile = this.files[0];
 
     if (choosedFile) {
 
-        const reader = new FileReader(); //FileReader is a predefined function of JS
+        const reader = new FileReader();
 
-        reader.addEventListener('load', function(){
+        reader.addEventListener('load', function () {
             img.setAttribute('src', reader.result);
         });
 
         reader.readAsDataURL(choosedFile);
+    }
+});
 
-        //Allright is done
+// lengkapi profile
 
-        //please like the video
-        //comment if have any issue related to vide & also rate my work in comment section
+document.getElementById('profile-detail').addEventListener('submit', (e) => {
+    e.preventDefault()
 
-        //And aslo please subscribe for more tutorial like this
+    var ig = document.getElementById('instagram-username')
+    var twt = document.getElementById('twitter-username')
+    var fb = document.getElementById('facebook-username')
+    var sites = document.getElementById('website-username')
 
-        //thanks for watching
+
+    var sosmed = {
+        instagram: ig,
+        twitter: twt,
+        facebook: fb,
+        website: sites
+    }
+
+    var sosmedData = localStorage.getItem('sosmed');
+    var sosmedArray = sosmedData ? JSON.parse(sosmedData) : [];
+    jsonArray.push(sosmed);
+    localStorage.setItem('user', JSON.stringify(sosmedArray));
+    window.location.href = '/View/profilepage.html';
+})
+
+document.addEventListener("DOMContentLoaded", function () {
+    var sosmedData = localStorage.getItem('sosmed');
+    var sosmedArray = sosmedData ? JSON.parse(sosmedData) : [];
+
+    if (sosmedArray.length > 0) {
+        var currentSosmed = sosmedArray[sosmedArray.length - 1];
+        var ig = currentSosmed.instagram
+        var twt = currentSosmed.twitter
+        var fb = currentSosmed.facebook
+        var website = currentSosmed.website
+        var sosmedElement = document.getElementById("sosmed");
+        sosmedElement.innerHTML = `${ig}`;
+        sosmedElement.innerHTML = `${twt}`;
+        sosmedElement.innerHTML = `${fb}`;
+        sosmedElement.innerHTML = `${website}`;
     }
 });
