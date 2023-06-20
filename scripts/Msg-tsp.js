@@ -1,35 +1,35 @@
 var shops = [
     {   
-        image: "../assets/cookies.png",
-        name: "cO.Okies",
+        image: "../assets/tenue-logo.jpg",
+        name: "Tenue de Attire",
         type: "Sedang Aktif",
         greeting: "Halo, apakah kamu tertarik...",
-        arrow: "../assets/arrow-selected.png"
+        arrow: "../assets/arrow-pesan.png"
     },
     {
-        image: "../assets/mrdearby.png",
-        name: "Mr. Dearby",
+        image: "../assets/tsp-logo.jpg",
+        name: "The Sounds Project",
         type: "Tidak Aktif",
         greeting: "Halo, apakah kamu tertarik...",
         arrow: "../assets/arrow-pesan.png"
     },
     {
-        image: "../assets/lalafood.png",
-        name: "Lala Food",
+        image: "../assets/nappamilano.jpg",
+        name: "Nappa Milano",
         type: "Sedang Aktif",
         greeting: "Halo, apakah kamu tertarik...",
         arrow: "../assets/arrow-pesan.png"
     },
     {
-        image: "../assets/ichillin.png",
-        name: "iChillin",
+        image: "../assets/suasanacorp.png",
+        name: "Suasana Corp",
         type: "Sedang Aktif",
         greeting: "Halo, apakah kamu tertarik...",
         arrow: "../assets/arrow-pesan.png"
     },
     {
-        image: "../assets/iscream.png",
-        name: "I SCREAM",
+        image: "../assets/bukanagara.jpg",
+        name: "BUKANAGARA Coffee",
         type: "Sedang Aktif",
         greeting: "Halo, apakah kamu tertarik...",
         arrow: "../assets/arrow-pesan.png"
@@ -66,27 +66,27 @@ var shopContainer = document.getElementById("shop-container");
         shopContainer.appendChild(shopElement);
     });
 
-function redirectToShop(shopName) {
-    switch (shopName) {
-        case "cO.Okies":
-            window.location.href = "Message.html";
-            break;
-        case "Mr. Dearby":
-            window.location.href = "MrDearby.html";
-            break;
-        case "Lala Food":
-            window.location.href = "lalafood-page.html";
-            break;
-        case "iChillin":
-            window.location.href = "ichillin-page.html";
-            break;
-        case "I SCREAM":
-            window.location.href = "iscream-page.html";
-            break;
-        default:
-            break;
+    function redirectToShop(shopName) {
+        switch (shopName) {
+            case "Tenue de Attire":
+                window.location.href = "Msg-Tenue.html";
+                break;
+            case "The Sounds Project":
+                window.location.href = "Msg-tsp.html";
+                break;
+            case "Nappa Milano":
+                window.location.href = "Msg-nappa.html";
+                break;
+            case "Suasana Corp":
+                window.location.href = "Msg-suasana.html";
+                break;
+            case "BUKANAGARA Coffee":
+                window.location.href = "Msg-bukanagara.html";
+                break;
+            default:
+                break;
+        }
     }
-}
 
 $(document).ready(function() {
     $('.option-1').click(function() {
