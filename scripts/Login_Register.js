@@ -54,5 +54,7 @@ showPassword.addEventListener("click", function () {
 });
 
 
+var account = localStorage.getItem('user')
 
+// if(account)
 
