@@ -1,35 +1,35 @@
 var shops = [
     {   
-        image: "../assets/cookies.png",
-        name: "cO.Okies",
+        image: "../assets/tenue-logo.jpg",
+        name: "Tenue de Attire",
         type: "Sedang Aktif",
         greeting: "Halo, apakah kamu tertarik untuk bekerja sama dengan kami? Kami memerlukan...",
         arrow: "../assets/arrow-pesan.png"
     },
     {
-        image: "../assets/mrdearby.png",
-        name: "Mr. Dearby",
+        image: "../assets/tsp-logo.jpg",
+        name: "The Sounds Project",
         type: "Tidak Aktif",
         greeting: "Halo, apakah kamu tertarik untuk bekerja sama dengan kami? Kami memerlukan...",
         arrow: "../assets/arrow-pesan.png"
     },
     {
-        image: "../assets/lalafood.png",
-        name: "Lala Food",
+        image: "../assets/nappamilano.jpg",
+        name: "Nappa Milano",
         type: "Sedang Aktif",
         greeting: "Halo, apakah kamu tertarik untuk bekerja sama dengan kami? Kami memerlukan...",
         arrow: "../assets/arrow-pesan.png"
     },
     {
-        image: "../assets/ichillin.png",
-        name: "iChillin",
+        image: "../assets/suasanacorp.png",
+        name: "Suasana Corp",
         type: "Sedang Aktif",
         greeting: "Halo, apakah kamu tertarik untuk bekerja sama dengan kami? Kami memerlukan...",
         arrow: "../assets/arrow-pesan.png"
     },
     {
-        image: "../assets/iscream.png",
-        name: "I SCREAM",
+        image: "../assets/bukanagara.jpg",
+        name: "BUKANAGARA Coffee",
         type: "Sedang Aktif",
         greeting: "Halo, apakah kamu tertarik untuk bekerja sama dengan kami? Kami memerlukan...",
         arrow: "../assets/arrow-pesan.png"
@@ -68,20 +68,20 @@ var shopContainer = document.getElementById("shop-container");
 
 function redirectToShop(shopName) {
     switch (shopName) {
-        case "cO.Okies":
-            window.location.href = "Cookies.html";
+        case "Tenue de Attire":
+            window.location.href = "Msg-Tenue.html";
             break;
-        case "Mr. Dearby":
-            window.location.href = "MrDearby.html";
+        case "The Sounds Project":
+            window.location.href = "Msg-tsp.html";
             break;
-        case "Lala Food":
-            window.location.href = "lalafood-page.html";
+        case "Nappa Milano":
+            window.location.href = "Msg-nappa.html";
             break;
-        case "iChillin":
-            window.location.href = "ichillin-page.html";
+        case "Suasana Corp":
+            window.location.href = "Msg-suasana.html";
             break;
-        case "I SCREAM":
-            window.location.href = "iscream-page.html";
+        case "BUKANAGARA Coffee":
+            window.location.href = "Msg-bukanagara.html";
             break;
         default:
             break;
