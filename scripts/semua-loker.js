@@ -355,7 +355,6 @@ function addToFavorites(event, talents, type) {
             </div>
           </div>
         `;
-
                 favoritesContainer.appendChild(favDiv);
             }
         });

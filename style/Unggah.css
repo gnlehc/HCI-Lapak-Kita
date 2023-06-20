@@ -379,7 +379,7 @@ nav ul li a:hover {
     background-color: #1a1a1a;
     height: 220vw;
     width: 50vw;
-    top: 0;
+    top: -2vw;
     right: 0;
     transition: all 0.25s ease-in;
     translate: 10px 0px;
