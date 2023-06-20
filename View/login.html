@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lapak kita</title>
     <link rel="stylesheet" href="/style/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta
+      name="google-signin-client_id"
+      content="1060515001003-lhh7a6kp5lre8guk146n61l4h8t562do.apps.googleusercontent.com" />
   </head>
   <body>
     <div class="container">
@@ -28,37 +37,42 @@
           </p>
         </div>
         <br />
-        <div class="form">
+        <form id="form-login">
           <div class="input-box">
-            <p>Nomor Ponsel atau Email</p>
-            <input type="text" placeholder="0813461239" />
+            <br />
+            <label for="error" id="error"></label>
+            <p>Email</p>
+            <input type="email" placeholder="AyuDiaz@gmail.com" id="email" />
           </div>
           <div class="input-box">
             <p>Kata Sandi</p>
-            <input type="password" placeholder="Minimum 8 karakter" />
+            <input
+              type="password"
+              placeholder="Minimum 8 karakter"
+              id="password" />
           </div>
+          <i class="fa fa-eye" id="show-password"></i>
           <div class="forgot">
             <a href="#">Lupa kata sandi?</a>
           </div>
           <div class="login">
-            <button type="button">
+            <button type="submit">
               <b style="font-size: larger">Masuk</b>
             </button>
           </div>
           <div class="or">
             <hr class="between" data-text="atau masuk dengan" />
           </div>
-          <div class="option">
-            <img
-              src="/assets/Login_Register/google.png"
-              style="width: 45%"
-              alt="" />
-          </div>
-          <div class="component">
-            <img src="/assets/Login_Register/logincomponent.png" alt="" />
-          </div>
+          <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        </form>
+        <div class="component">
+          <img src="/assets/Login_Register/logincomponent.png" alt="" />
         </div>
       </div>
     </div>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="../scripts/login.js"></script>
+    <script src="../scripts/Google.js"></script>
   </body>
 </html>
