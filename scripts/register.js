@@ -31,6 +31,10 @@ document.getElementById("form-field").addEventListener("submit", (event) => {
         error.textContent = "Username length should be between 4 and 15 characters.";
         return;
     }
+    else if (password.length < 8) {
+        error.textContent = "Password length should atleast 8 character.";
+        return;
+    }
 
     error.textContent = "";
     errors.textContent = "";
@@ -48,10 +52,14 @@ document.getElementById("form-field").addEventListener("submit", (event) => {
         noTLP: noTLP,
         password: password,
         confirm: confirm,
+        // timestamp: new Date().toString(),
+        timestamp: new Date().toLocaleString('en-US', { timeZone: 'Asia/Jakarta' }),
         // occupation: [{
-            
+
         // },...sebelumnya]
     };
+
+    console.log(user.timestamp)
 
     var storedData = localStorage.getItem('user');
     var jsonArray = storedData ? JSON.parse(storedData) : [];
