@@ -44,43 +44,48 @@
           </div>
 
           <div class="opts">
-            <button id="profilmu">
-              <!-- <i
+            <a href="#"
+              ><button id="profilmu">
+                <!-- <i
                 class="fa-regular fa-user"
                 style="color: #1a1a1a"
                 id="user-icon"></i> -->
-              <img src="../assets/profile-logo.png" alt="" />
-              <a href="/View/profilepage.html">Profilmu</a>
-              <!-- <i
+                <img src="../assets/profile-logo.png" alt="" />
+                Profilmu
+                <!-- <i
                 class="fa-solid fa-angle-right"
                 style="color: #1a1a1a"
                 id="arrow-right1"></i> -->
-            </button>
+              </button></a
+            >
 
-            <button id="lengkapi-profilmu">
-              <img src="../assets/lengkapi-porto.png" alt="" />
-              <a href="#">Lengkapi Profilmu</a>
-              <!-- <i
+            <a href="/View/profile-lengkapi1.html"
+              ><button id="lengkapi-profilmu">
+                <img src="../assets/lengkapi-porto.png" alt="" />
+                Lengkapi Profilmu
+                <!-- <i
                 class="fa-solid fa-angle-right"
                 style="color: #1a1a1a"
                 id="arrow-right2"></i> -->
-            </button>
+              </button></a
+            >
 
-            <button id="portofoliomu">
-              <img src="../assets/porto-logo.png" alt="" />
-              <a href="/View/profile-portfoliomu.html">Portofoliomu</a>
-              <!-- <i
+            <a href="/View/profile-portfoliomu.html"
+              ><button id="portofoliomu">
+                <img src="../assets/porto-logo.png" alt="" />
+                Portofoliomu
+                <!-- <i
                 class="fa-solid fa-angle-right"
                 style="color: #1a1a1a"
                 id="arrow-right3"></i> -->
-            </button>
+              </button></a
+            >
 
-            <button
-              id="keluar-akun"
-              onclick="window.location.href = '/View/register.html'">
-              Keluar Akun
-              <img src="../assets/logout-logo.png" alt="" />
-            </button>
+            <a href="register.html"
+              ><button id="keluar-akun">
+                Keluar Akun
+                <img src="../assets/logout-logo.png" alt="" /></button
+            ></a>
           </div>
         </div>
 
@@ -107,15 +112,13 @@
                     var username = currentUser.name;
                     var email = currentUser.email;
                     var tlp = currentUser.noTLP;
-                    var time = currentUser.timestamp;
                     var usersElement = document.getElementById("user");
                     var emailElement = document.getElementById("email");
                     var timeElement =
                       document.getElementById("phone-joined-on");
                     usersElement.innerHTML = `<h1>${username}!</h1>`;
                     emailElement.innerHTML = ` <h2>${email}</h2>`;
-                    timeElement.innerHTML = ` <h3>${tlp} | ${time}</h3>`;
-                    console.log(time);
+                    timeElement.innerHTML = ` <h3>${tlp} | Bergabung pada 12 Sep 2019</h3>`;
                   }
                 });
               </script>
@@ -152,6 +155,25 @@
                 <h4>www.michelle-winata.site</h4>
               </div>
             </div>
+            <script>
+              document.addEventListener("DOMContentLoaded", () => {
+                var storedData = localStorage.getItem("user");
+                var jsonArray = storedData ? JSON.parse(storedData) : [];
+
+                if (jsonArray.length > 0) {
+                  var currentUser = jsonArray[jsonArray.length - 1];
+                  var username = currentUser.name;
+                  var email = currentUser.email;
+                  var tlp = currentUser.noTLP;
+                  var usersElement = document.getElementById("user");
+                  var emailElement = document.getElementById("email");
+                  var timeElement = document.getElementById("phone-joined-on");
+                  usersElement.innerHTML = `<h1>${username}!</h1>`;
+                  emailElement.innerHTML = ` <h2>${email}</h2>`;
+                  timeElement.innerHTML = ` <h3>${tlp} | Bergabung pada 12 Sep 2019</h3>`;
+                }
+              });
+            </script>
           </div>
         </div>
       </div>
@@ -159,4 +181,5 @@
     <script src="/scripts/profilepage.js" defer></script>
     <script src="/scripts/register.js" defer></script>
   </body>
+  <script src="/scripts/profilepage.js" defer></script>
 </html>
