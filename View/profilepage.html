@@ -165,12 +165,13 @@
                   var username = currentUser.name;
                   var email = currentUser.email;
                   var tlp = currentUser.noTLP;
+                  var time = currentUser.timestamp;
                   var usersElement = document.getElementById("user");
                   var emailElement = document.getElementById("email");
                   var timeElement = document.getElementById("phone-joined-on");
                   usersElement.innerHTML = `<h1>${username}!</h1>`;
                   emailElement.innerHTML = ` <h2>${email}</h2>`;
-                  timeElement.innerHTML = ` <h3>${tlp} | Bergabung pada 12 Sep 2019</h3>`;
+                  timeElement.innerHTML = ` <h3>${tlp} | ${time}</h3>`;
                 }
               });
             </script>
