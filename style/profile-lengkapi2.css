@@ -550,9 +550,9 @@ input::placeholder {
     }
     
     .header p{
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: 700;
-        width: 30vw;
+        width: 50vw;
         margin-top: -5vw;
         margin-left: -7vw;
         display: flex;
@@ -560,13 +560,17 @@ input::placeholder {
     }
 
     .opts{
-        margin-top: 0vw;
+        margin-top: 2vw;
         display: flex;
         flex-direction: row;
         gap: 2.7vw;
-        margin-left: -30vw;
+        margin-left: -50vw;
         height: 6vw;
     }
+    .opts button {
+        font-size: 1.5vw;
+        font-weight: 500;
+      }
 
     .right-container{
         margin-top: 15vw;
@@ -579,11 +583,12 @@ input::placeholder {
   }
 
   .right-container .header p {
+    margin-top: 2vw;
     margin-left: -27vw;
   }
 
     .verifikasi-akun h1 {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         font-weight: 700;
     }
 
@@ -682,10 +687,9 @@ input::placeholder {
     }
     .bottom-arrow{
         margin-top: 7vw;
-        margin-left: 34vw;
-        font-size: 4vw;
-        width: 4vw;
-        width: 15vw;
+        margin-left: 28vw;
+        font-size: 7vw;
+        width: 20vw;
     }
 
   #prev-arrow {
