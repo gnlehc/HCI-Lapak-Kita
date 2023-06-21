@@ -361,7 +361,6 @@ input::placeholder {
   margin-top: 0.9vw;
   width: 2vw;
   /* height: max-content; */
-  
 }
 
 .bottom-arrow {
@@ -446,13 +445,7 @@ input::placeholder {
     padding: 8vw;
     text-align: left;
   }
-  nav ul li:nth-child(3)::after {
-    width: 50%;
-    background-color: #f7c873;
-    position: absolute;
-    left: 6vw;
-    transition: 100ms ease-in;
-  }
+
   nav ul li a {
     text-decoration: none;
     color: white;
@@ -468,6 +461,7 @@ input::placeholder {
     display: none;
   }
   #hamburger {
+    cursor: pointer;
     font-size: 6vw;
     display: flex;
     color: #1a1a1a;
@@ -485,17 +479,16 @@ input::placeholder {
     display: flex;
     flex-direction: column;
   }
-  
-  .header p{
-      font-size: 4vw;
-      font-weight: 700;
-      width: 50vw;
-      margin-top: -5vw;
-      margin-left: -7vw;
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 4vw;
 
+  .header p {
+    font-size: 4vw;
+    font-weight: 700;
+    width: 50vw;
+    margin-top: -5vw;
+    margin-left: -7vw;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4vw;
   }
 
   .right .header {
@@ -506,21 +499,21 @@ input::placeholder {
     margin-top: -3vw;
   }
 
-  .posisi-yang-diminati .header p{
+  .posisi-yang-diminati .header p {
     font-size: 3.5vw;
   }
 
-  .med-sos .header p{
+  .med-sos .header p {
     font-size: 3.5vw;
   }
 
-  .opts{
-      margin-top: 0vw;
-      display: flex;
-      flex-direction: row;
-      gap: 2.7vw;
-      margin-left: -7vw;
-      height: 6vw;
+  .opts {
+    margin-top: 0vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2.7vw;
+    margin-left: -7vw;
+    height: 6vw;
   }
 
   button {
@@ -553,9 +546,9 @@ input::placeholder {
     margin-left: 1vw;
   }
 
-  #keluar-akun{
-      margin-top: 0vw;
-      background: #FFC1C1;
+  #keluar-akun {
+    margin-top: 0vw;
+    background: #ffc1c1;
   }
 
   #keluar-akun a {
@@ -567,17 +560,16 @@ input::placeholder {
     height: max-content;
   }
 
-  .bottom-arrow{
-      margin-top: 7vw;
-      margin-left: 27vw;
-      font-size: 4vw;
-      width: 4vw;
-      width: 15vw;
+  .bottom-arrow {
+    margin-top: 7vw;
+    margin-left: 27vw;
+    font-size: 4vw;
+    width: 4vw;
+    width: 15vw;
   }
 
-  #prev-arrow
-  {
-      margin-right: 8vw;
+  #prev-arrow {
+    margin-right: 8vw;
   }
 
   .right {

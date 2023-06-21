@@ -40,7 +40,6 @@ nav {
 }
 nav ul {
   margin-bottom: 2%;
-  /* background: aqua; */
 }
 nav ul li {
   margin-top: 2%;
@@ -49,7 +48,6 @@ nav ul li {
   position: relative;
   margin-right: 30px;
   cursor: pointer;
-  /* background: aqua; */
 }
 nav ul li a {
   text-decoration: none;
