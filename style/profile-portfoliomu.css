@@ -160,6 +160,14 @@
 
 }
 
+.opts button{
+    font-size: 1.2vw;
+    font-weight: 500;
+  }
+  .opts a{
+    text-decoration: none;
+  }
+
 button{
     padding: 1vw 0.5vw;
     width: 16vw;

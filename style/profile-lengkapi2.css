@@ -98,13 +98,13 @@ margin-right:4vw;
 background-color: #1a1a1a;
 color: #ffca6b;
 width: 8%;
-height: 30px;
+height: 2.4vw;
 border-radius: 5px;
 border: none;
 transition: 400ms;
 cursor: pointer;
-/* align-items: center;
-justify-content: center; */
+align-items: center;
+justify-content: center;
 }
 .profil:hover {
 background-color: #ffca6b;
@@ -175,8 +175,7 @@ width: 8vw;
 height: 2.4vw;
 font-size: 1.2vw;
 margin: -0.4vw 1vw;
-/* margin: auto; */
-/* transform: translateX(60%); */
+justify-content: center;
 background: #1a1a1a;
 color: #ffca6b;
 border-radius: 5px;
@@ -237,6 +236,14 @@ transform: translateY(2px);
     gap: 1vw;
 
 }
+
+.opts button{
+    font-size: 1.2vw;
+    font-weight: 500;
+  }
+  .opts a{
+    text-decoration: none;
+  }
 
 button{
     padding: 1vw 0.5vw;
@@ -538,6 +545,9 @@ input::placeholder{
     }
     .profile-btn {
       display: none;
+    }
+    .profil{
+        display: none;
     }
     #hamburger {
       font-size: 6vw;
