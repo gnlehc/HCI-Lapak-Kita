@@ -104,52 +104,51 @@
             <p>Lengkapi Data Akun</p>
           </div>
 
-          <div class="posisi-yang-diminati">
-            <div class="header">
-              <h2>Posisi Diminati</h2>
+          <form id="profile-detail">
+            <div class="posisi-yang-diminati">
+              <div class="header">
+                <h2>Posisi Diminati</h2>
+              </div>
+              <input
+                type="text"
+                placeholder="Admin Instagram"
+                id="instagram-input" />
             </div>
-            <form>
-            <input
-              type="text"
-              placeholder="Admin Instagram"
-              id="instagram-input" />
-          </form>
-          </div>
+          
 
-          <div class="med-sos">
-            <div class="header">
-              <p>Sosial Media</p>
-            </div>
+            <div class="med-sos">
+              <div class="header">
+                <p>Sosial Media</p>
+              </div>
 
-            <div class="sosial-media">
-              <form id="profile-detail">
-                <div class="instagram">
-                  <img src="../assets/instagram-logo.png" alt="" />
-                  <input
-                    type="text"
-                    placeholder="@ayu_diaz"
-                    id="instagram-username" />
-                </div>
+              <div class="sosial-media">
+                  <div class="instagram">
+                    <img src="../assets/instagram-logo.png" alt="" />
+                    <input
+                      type="text"
+                      placeholder="@ayu_diaz"
+                      id="instagram-username" />
+                  </div>
 
-                <div class="linked-in">
-                  <img src="../assets/linked-in.png" alt="" />
-                  <input
-                    type="text"
-                    placeholder="linkedin.com/in/AyuDiaz/"
-                    id="linked-in" />
-                </div>
+                  <div class="linked-in">
+                    <img src="../assets/linked-in.png" alt="" />
+                    <input
+                      type="text"
+                      placeholder="linkedin.com/in/AyuDiaz/"
+                      id="linked-in" />
+                  </div>
 
-                <div class="website">
-                  <img src="../assets/website-logo.png" alt="" />
-                  <input
-                    type="text"
-                    placeholder="www.ayudiaz.id"
-                    id="website-username" />
-                </div>
+                  <div class="website">
+                    <img src="../assets/website-logo.png" alt="" />
+                    <input
+                      type="text"
+                      placeholder="www.ayudiaz.id"
+                      id="website-username" />
+                  </div>
 
-                <div class="btn-submit">
-                  <button type="submit" id="redirectButton">Simpan Data</button>
-                </div>
+                  <div class="btn-submit">
+                    <button type="submit" id="redirectButton">Simpan Data</button>
+                  </div>
               </form>
             </div>
           </div>
@@ -160,11 +159,13 @@
               .addEventListener("submit", function (e) {
                 e.preventDefault();
 
+                // var pos = document.getElementById("pos").value;
                 var ig = document.getElementById("instagram-username").value;
                 var linked = document.getElementById("linked-in").value;
                 var sites = document.getElementById("website-username").value;
 
                 var sosmed = {
+                  // position: pos,
                   instagram: ig,
                   linkedIn: linked,
                   website: sites,
