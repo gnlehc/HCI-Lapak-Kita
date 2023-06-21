@@ -108,10 +108,7 @@
             <div class="header">
               <p>Posisi yang Diminati</p>
             </div>
-            <input
-              type="text"
-              placeholder="Admin Instagram"
-              id="instagram-input" />
+            <input type="text" placeholder="Admin Instagram" id="pos" />
           </div>
 
           <div class="med-sos">
@@ -158,11 +155,13 @@
               .addEventListener("submit", function (e) {
                 e.preventDefault();
 
+                // var pos = document.getElementById("pos").value;
                 var ig = document.getElementById("instagram-username").value;
                 var linked = document.getElementById("linked-in").value;
                 var sites = document.getElementById("website-username").value;
 
                 var sosmed = {
+                  // position: pos,
                   instagram: ig,
                   linkedIn: linked,
                   website: sites,

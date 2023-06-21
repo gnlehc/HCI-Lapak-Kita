@@ -18,6 +18,10 @@ body
 #hamburger, #ham {
   display: none;
 }
+form{
+  display: flex;
+  flex-direction: column;
+}
 
 .navbar {
     background-color: white;
