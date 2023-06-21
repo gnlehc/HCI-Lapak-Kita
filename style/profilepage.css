@@ -528,6 +528,25 @@ mark {
   display: none;
 }
 
+.profile-pic-div {
+  height: 20vw;
+  width: 20vw;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid grey;
+  left: 1vw;
+  top: 11vw;
+}
+
+
+.main-profile-right {
+  width: 50vw;
+  margin-left: 25vw;
+  margin-top: -8vw;
+}
   .left {
     width: 100vw;
     height: 10vw;
@@ -542,6 +561,10 @@ mark {
     height: 6vw;
     width: 90vw;
     cursor: pointer;
+  }
+  .opts button {
+    font-size: 1.5vw;
+    font-weight: 500;
   }
 
   button {
@@ -595,17 +618,17 @@ mark {
 }
 
 .lengkapi-section h1{
-  font-size: 3.5vw;
+  font-size:4vw;
 }
 
 .bidang-diminati h2 {
   margin-top: -1vw;
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 .bidang-diminati h4 {
   width: 25vw;
   margin-top: 0.3vw;
-  font-size: 2.5vw;
+  font-size: 3vw;
   height: 5vw;
 }
 
@@ -655,12 +678,16 @@ mark {
   .website
   {
     margin-top: 1vw;
-    width: 40vw;
-    margin-left: -0.3vw;
+    width: 50vw;
+    margin-left: -1.2vw;
   }
   .website h4 {
     width: 80vw;
     font-weight: lighter;
+  }
+  #website-img
+  {
+    margin-left: 1vw;
   }
 
 }
