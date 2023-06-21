@@ -257,9 +257,8 @@ button img{
     flex-direction: row;
     margin-top: 0.7vw;
 }
-.section2 .lokasi-portfolio{
-    margin-left: 19.5vw;
-  
+.lokasi-portfolio{
+    margin-left: 19.3vw;
 }
 
 .second-line{
@@ -293,7 +292,7 @@ button img{
 }
 
 .durasi-akhir-portfolio{
-    margin-left: 21.3vw;
+    margin-left: 19.9vw;
 }
 
 .deskripsi{
@@ -537,8 +536,8 @@ button img{
     font-size: 2.5vw;
 }
 
-.section2 .lokasi-portfolio{
-    margin-left: 16.8vw;
+.lokasi-portfolio{
+    margin-left: 16.5vw;
 }
 
 .durasi h1{
@@ -559,7 +558,7 @@ button img{
 }
 
 .durasi-akhir-portfolio{
-    margin-left: 20vw;
+    margin-left: 17.3vw;
 }
 
 .deskripsi h1{

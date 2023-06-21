@@ -1,138 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="/style/portfolio-view2.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7563b17235.js" crossorigin="anonymous"></script>
-    <title>Lapak Kita</title>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/style/portfolio-view2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/7563b17235.js"
+      crossorigin="anonymous"></script>
+    <title>Pengaturan Profil</title>
+  </head>
+  <body>
     <div class="page-container">
         <div class="navbar-container">
             <div class="navbar">
                 <img src="/assets/logonavbarblackversion.png" class="logo" />
                 <nav>
-                  <div class="nav-menu">
-                    <div class="nav-con">
-                      <ul>
-                        <li><a href="/View/Home.html"> Utama </a></li>
-                        <li><a href="/View/SemuaLoker.html"> Loker </a></li>
-                        <li><a href="/View/Unggah.html"> Unggah </a></li>
-                        <li><a href="/View/Notifikasi.html"> Pesan </a></li>
-                      </ul>
+                    <div class="nav-menu">
+                        <div class="nav-con">
+                            <ul>
+                                <li><a href="/View/Home.html"> Utama </a></li>
+                                <li><a href="/View/SemuaLoker.html"> Loker </a></li>
+                                <li><a href="/View/Unggah.html"> Unggah </a></li>
+                                <li><a href="/View/Notifikasi.html"> Pesan </a></li>
+                                <!-- <li><a href="/View/profilepage.html" id="ham"> Profil </a></li> -->
+                            </ul>
+                        </div>
                     </div>
-                  </div>
-                  <i id="hamburger" class="fa fa-bars"></i>
+                    <i id="hamburger" class="fa fa-bars"></i>
                 </nav>
-                <button onclick="window.location.href='/View/profilepage.html'" class="profile-btn">Profil</button>
-              </div>
-            <div class="prev-content" id="prev-content">
-                <div class="page-left">
+                <button
+                onclick="window.location.href='/View/profilepage.html'"
+                class="profile-btn">
+                Profil
+                </button>
+            </div>
+        </div>
 
-                    <div class="pengaturan-profilmu"></div>
-                        <h2 id="pengaturan-profilmu">Pengaturan Profilmu</h2>
+      <div class="body-container">
+        <div class="left">
+          <div class="header">
+            <p>Pengaturan Profil</p>
+          </div>
+
+          <div class="opts">
+            <button id="profilmu">
+              <!-- <i
+                class="fa-regular fa-user"
+                style="color: #1a1a1a"
+                id="user-icon"></i> -->
+              <img src="../assets/profile-logo.png" alt="">
+              <a href="/View/profilepage.html">Profilmu</a>
+              <!-- <i
+                class="fa-solid fa-angle-right"
+                style="color: #1a1a1a"
+                id="arrow-right1"></i> -->
+            </button>
+
+            <button id="lengkapi-profilmu">
+              <img src="../assets/lengkapi-porto.png" alt="">
+              <a href="#">Lengkapi Profilmu</a>
+              <!-- <i
+                class="fa-solid fa-angle-right"
+                style="color: #1a1a1a"
+                id="arrow-right2"></i> -->
+            </button>
+
+            <button id="portofoliomu">
+              <img src="../assets/porto-logo.png" alt="">
+              <a href="/View/profile-portfoliomu.html">Portofoliomu</a>
+              <!-- <i
+                class="fa-solid fa-angle-right"
+                style="color: #1a1a1a"
+                id="arrow-right3"></i> -->
+            </button>
+
+            <button id="keluar-akun">
+              <a href = "register.html">Keluar Akun</a>
+              <img src="../assets/logout-logo.png" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="line-grey"></div>
+
+        <div class="right">
+            <div class="right-container">
+                <div class="header">
+                <p>Portfoliomu</p>
+                </div>
+                <div class="first-line">
+                    <div class="arrow-left">
+                        <a href="/View/profile-portfoliomu.html"><i class="fa-solid fa-angle-left" style="color: #000000;" id="arrow-left"></i></a>
                     </div>
-                    
-                    <div class="buttons-left">
-                        <button id="profilmu">
-                            <i class="fa-regular fa-user" style="color: #1a1a1a;" id="user-icon"></i>
-                            <a href="/View/profilepage.html"><h2> Profilmu </h2></a>
-                            <i class="fa-solid fa-angle-right" style="color: #1a1a1a;" id="arrow-right1"></i>
-                        </button>
-
-                        <button id="lengkapi-profilmu">
-                            <i class="fa-regular fa-clipboard" id="clipboard-icon"></i>
-                            <a href="/View/profile-lengkapi1.html"><h2> Lengkapi Profilmu! </h2></a>
-                            <i class="fa-solid fa-angle-right" style="color: #1a1a1a;" id="arrow-right2"></i>
-                        </button>
-
-                        <button id="portofoliomu">
-                            <i class="fa-regular fa-file" id="file-icon"></i>
-                            <a href="#"><h2> Portofoliomu </h2></a>
-                            <i class="fa-solid fa-angle-right" style="color: #1a1a1a;" id="arrow-right3"></i>
-                        </button>
-
-                        <button id="keluar-akun">
-                            <h2> Keluar Akun</h2>
-                            <i class="fa-solid fa-arrow-right-from-bracket" id="logout"></i>
-                        </button>
+                    <div class="top-section">
+                        <div class="section1">
+                            <div class="judul">
+                                <h1>Judul</h1>
+                            </div>
+                            <div class="lokasi">
+                                <h1>Lokasi</h1>
+                            </div>
+                        </div>
+                        <div class="section2">
+                            <div class="judul-portfolio">
+                                <h3>Pembuat Konten</h3>
+                            </div>
+                            <div class="lokasi-portfolio">
+                                <h3>Remote - Jakarta</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="random-line">
-                    <hr class="line" width="45%" color="#ccccccc1">
-                </div>
-                <div class="page-right">
-                    <div class="first-line">
-                        <div class="arrow-left">
-                            <a href="/View/profile-portfoliomu.html"><i class="fa-solid fa-angle-left" style="color: #000000;" id="arrow-left"></i></a>
-                        </div>
-                        <div class="title">
-                            <h1>Portfoliomu</h1>
-                        </div>
-                        <div class="judul">
-                            <h1>Judul</h1>
-                        </div>
-                        <div class="lokasi">
-                            <h1>Lokasi</h1>
-                        </div>
-                        <div class="judul-portfolio">
-                            <h3>Pembuat Konten</h3>
-                        </div>
-                        <div class="lokasi-portfolio">
-                            <h3>Remote - Jakarta</h3>
-                        </div>
+                <div class="second-line">
+                    <div class="durasi">
+                        <h1>Durasi</h1>
                     </div>
-                    <div class="second-line">
-                        <div class="durasi">
-                            <h1>Durasi</h1>
-                        </div>
+                    <div class="section3">
                         <div class="durasi-mulai">
                             <h4>Mulai</h4>
                         </div>
                         <div class="durasi-akhir">
                             <h4>Akhir</h4>
                         </div>
+                    </div>
+                    <div class="section4">
                         <div class="durasi-mulai-portfolio">
-                            <h3>20 Maret 2021</h3>
+                            <h3>20 Maret 2017</h3>
                         </div>
                         <div class="durasi-akhir-portfolio">
-                            <h3>20 Maret 2022</h3>
+                            <h3>25 Maret 2018</h3>
                         </div>
                     </div>
-                    <div class="third-line">
-                        <div class="deskripsi">
-                            <h1>Deskripsi</h1>
-                        </div>
-                        <div class="deskripsi-portfolio">
-                            <p>Bekerja sebagai pembuat dan perencana konten sosial 
-                                media untuk salah satu merek skincare ternama. Berhasil 
-                                membuat konten-konten yang menarik dan meningkatkan jumlah
-                                <i>engagement</i> akun.  
-                            </p>
-                        </div>
+                </div>
+                <div class="third-line">
+                    <div class="deskripsi">
+                        <h1>Deskripsi</h1>
                     </div>
+                    <div class="deskripsi-portfolio">
+                        <p>Bekerja sebagai pembuat dan perencana konten sosial media 
+                            untuk salah satu merek <i>skincare</i> ternama. Berhasil membuat 
+                            konten-konten yang menarik, unik dan memberikan kesan kepada
+                            customer.  
+                        </p>
+                    </div>
+                </div>
+                <div class="bottom-section">
                     <div class="portfolio-img">
-                        <img src="/assets/instagram admin portfolio.png" id="portfolio-img">
+                        <img src="/assets/pembuat konten portfolio.png" id="portfolio-img">
                     </div>
                     <div class="catatan-lainnya-core">
                         <div class="catatan-lainnya">
                             <h1>Catatan Lainnya</h1>
                         </div>
                         <div class="catatan-lainnya-portfolio">
-                            <p>Membuat konten untuk sebuah perusahaan membantu saya mengerti
-                                cara bekerja sama dalam sebuah tim dengan baik. Saya mendapatkan
-                                pengalaman yang berharga lewat pekerjaan ini.
-                            </p>
+                            <p>Bekerja sama dengan sebuah perusahaan besar mengembangkan skill saya.
+                                Selain itu, saya juga mendapatkan pengalaman dan koneksi baru, serta
+                            belajar macam konten seperti apa yang baik untuk dibuat.  </p>
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
+<script src="/scripts/main.js"></script>
 </html>

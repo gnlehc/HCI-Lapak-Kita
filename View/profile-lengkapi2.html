@@ -1,101 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="/style/profile-lengkapi2.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7563b17235.js" crossorigin="anonymous"></script>
-    <title>Lapak Kita</title>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/style/profile-lengkapi2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/7563b17235.js"
+      crossorigin="anonymous"></script>
+    <title>Pengaturan Profil</title>
+  </head>
+  <body>
     <div class="page-container">
-        <div class="navbar-container">
-            <div class="navbar">
-                <img src="/assets/logonavbarblackversion.png" class="logo" />
-                <nav>
-                  <div class="nav-menu">
-                    <div class="nav-con">
-                      <ul>
-                        <li><a href="/View/Home.html"> Utama </a></li>
-                        <li><a href="/View/SemuaLoker.html"> Loker </a></li>
-                        <li><a href="/View/Unggah.html"> Unggah </a></li>
-                        <li><a href="/View/Notifikasi.html"> Pesan </a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <i id="hamburger" class="fa fa-bars"></i>
-                </nav>
-                <button onclick="window.location.href='/View/profilepage.html'" class="profile-btn">Profil</button>
+      <div class="navbar-container">
+        <div class="navbar">
+          <img src="/assets/logonavbarblackversion.png" class="logo" />
+          <nav>
+            <div class="nav-menu">
+              <div class="nav-con">
+                <ul>
+                  <li><a href="/View/Home.html"> Utama </a></li>
+                  <li><a href="/View/SemuaLoker.html"> Loker </a></li>
+                  <li><a href="/View/Unggah.html"> Unggah </a></li>
+                  <li><a href="/View/Notifikasi.html"> Pesan </a></li>
+                </ul>
               </div>
-            <div class="prev-content" id="prev-content">
-                <div class="page-left">
+            </div>
+            <i id="hamburger" class="fa fa-bars"></i>
+          </nav>
+          <button
+                onclick="window.location.href='/View/profilepage.html'"
+                class="profile-btn">
+                Profil
+                </button>
+        </div>
+      </div>
 
-                    <div class="pengaturan-profilmu"></div>
-                        <h2 id="pengaturan-profilmu">Pengaturan Profilmu</h2>
-                    </div>
-                    
-                    <div class="buttons-left">
-                        <button id="profilmu">
-                            <i class="fa-regular fa-user" style="color: #1a1a1a;" id="user-icon"></i>
-                            <a href="/View/profilepage.html"><h2> Profilmu </h2></a>
-                            <i class="fa-solid fa-angle-right" style="color: #1a1a1a;" id="arrow-right1"></i>
-                        </button>
+      <div class="body-container">
+        <div class="left">
+          <div class="header">
+            <p>Pengaturan Profil</p>
+          </div>
 
-                        <button id="lengkapi-profilmu">
-                            <i class="fa-regular fa-clipboard" id="clipboard-icon"></i>
-                            <a href="#"><h2> Lengkapi Profilmu! </h2></a>
-                            <i class="fa-solid fa-angle-right" style="color: #1a1a1a;" id="arrow-right2"></i>
-                        </button>
+          <div class="opts">
+            <button id="profilmu">
+              <!-- <i
+                class="fa-regular fa-user"
+                style="color: #1a1a1a"
+                id="user-icon"></i> -->
+              <img src="../assets/profile-logo.png" alt="">
+              <a href="/View/profilepage.html">Profilmu</a>
+              <!-- <i
+                class="fa-solid fa-angle-right"
+                style="color: #1a1a1a"
+                id="arrow-right1"></i> -->
+            </button>
 
-                        <button id="portofoliomu">
-                            <i class="fa-regular fa-file" id="file-icon"></i>
-                            <a href="/View/profile-portfoliomu.html"><h2> Portofoliomu </h2></a>
-                            <i class="fa-solid fa-angle-right" style="color: #1a1a1a;" id="arrow-right3"></i>
-                        </button>
+            <button id="lengkapi-profilmu">
+              <img src="../assets/lengkapi-porto.png" alt="">
+              <a href="#">Lengkapi Profilmu</a>
+              <!-- <i
+                class="fa-solid fa-angle-right"
+                style="color: #1a1a1a"
+                id="arrow-right2"></i> -->
+            </button>
 
-                        <button id="keluar-akun">
-                            <h2> Keluar Akun</h2>
-                            <i class="fa-solid fa-arrow-right-from-bracket" id="logout"></i>
-                        </button>
-                    </div>
+            <button id="portofoliomu">
+              <img src="../assets/porto-logo.png" alt="">
+              <a href="/View/profile-portfoliomu.html">Portofoliomu</a>
+              <!-- <i
+                class="fa-solid fa-angle-right"
+                style="color: #1a1a1a"
+                id="arrow-right3"></i> -->
+            </button>
+
+            <button id="keluar-akun">
+              <a href = "register.html">Keluar Akun</a>
+              <img src="../assets/logout-logo.png" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="line-grey"></div>
+
+        <div class="right">
+          <div class="right-container">
+              <div class="header">
+                <p>Lengkapi Data Akun</p>
+              </div>
+              <div class="form-container">
+                <div class="verifikasi-akun">
+                  <div class="header">
+                    <h1>Verifikasi Akun</h1>
+                  </div>
+                    <p>Akun akan terverifikasi paling lambat dalam 24 jam. Periksa emailmu
+                        untuk konfirmasi lebih lanjut</p>
                 </div>
-                <div class="random-line">
-                    <hr class="line" width="45%" color="#ccccccc1">
+
+                <form>
+                    <div class="top-form">
+                      <div class="upload-foto">
+                          <div class="foto-diri">
+                              <div class="header">
+                                  <h2>Foto Diri</h2>
+                                  <input type="file">
+                              </div>
+                          </div>
+
+                          <div class="foto-KTP">
+                              <div class="header">
+                                  <h2>Foto KTP</h2>
+                                  <input type="file">
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="bottom-form">
+                      <div class="alamat">
+                          <div class="header">
+                              <h2>Alamat</h2>
+                              <input type="text" placeholder="Jln. Umban Sari 3 Kav 3E no. 89F">
+                          </div>
+                      </div>
+                    </div>
+                </form>
+
+                <div class="btn-submit">
+                    <button type ="submit" id="redirectButton">
+                      Simpan Data dan Selesai
+                    </button>
+                  </div>
+
+                <div class="bottom-arrow">
+                    <i
+                    class="fa-solid fa-angle-left"
+                    style="color: #000000"
+                    id="prev-arrow"></i>
+                    <a href="/View/profile-lengkapi2.html">
+                        <i
+                        class="fa-solid fa-angle-right"
+                        style="color: #c4c6d0"
+                        id="next-arrow"></i></a>
                 </div>
-                <div class="page-right">
-                    <div class="title">
-                        <h1>Lengkapi Data Akun</h1>
-                    </div>
-                    <div class="verifikasi-akun">
-                        <h1>Verifikasi Akun</h1>
-                        <p>Akun akan terverifikasi paling lambat dalam 24 jam. Periksa emailmu <br> untuk konfirmasi lebih lanjut</p>
-                    </div>
-                    <div class="unggah-foto-diri">
-                        <h1>Foto Diri</h1>
-                    </div>
-                    <div class="unggah-foto-ktp">
-                        <h1>Foto KTP</h1>
-                    </div>
-                    <div class="alamat-rumah">
-                        <h1>Alamat Rumah</h1>
-                    </div>
-                    <input type="text" placeholder="Upload dalam jpg, jpeg, atau png" id="foto-diri"> 
-                    <input type="text" placeholder="Upload dalam jpg, jpeg, atau png" id="foto-ktp">
-                    <input type="text" placeholder="Jln. Umban Sari 3 Kav 3E no. 89F" id="alamat-rumah">
-                    <i class="fa-solid fa-cloud-arrow-up" style="color: #ffe5b5;" id="upload-1"></i>
-                    <i class="fa-solid fa-cloud-arrow-up" style="color: #ffe5b5;" id="upload-2"></i>
-                    <div class="bottom-arrow">
-                        <i class="fa-solid fa-angle-left" style="color: #c4c6d0;" id="prev-arrow"></i>
-                        <i class="fa-solid fa-angle-right" style="color: #c4c6d0;" id="next-arrow"></i>
-                    </div>
-                    <button id="tombol-unggah">Unggah</button>
-                </div>
+              </div>
             </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
