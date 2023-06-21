@@ -291,6 +291,7 @@ button img {
 #keluar-akun {
   margin-top: 12vw;
   background: #ffc1c1;
+  justify-content: center;
 }
 
 #keluar-akun a {
@@ -351,13 +352,15 @@ input::placeholder {
 .linked-in input,
 .website input {
   margin-left: 1vw;
+  padding-left: 2vw;
 }
 .instagram img,
 .linked-in img,
 .website img {
-  margin-top: 0.5vw;
+  margin-top: 0.9vw;
   width: 2vw;
-  height: max-content;
+  /* height: max-content; */
+  
 }
 
 .bottom-arrow {
@@ -483,16 +486,38 @@ input::placeholder {
   }
   
   .header p{
-      font-size: 3vw;
+      font-size: 4vw;
       font-weight: 700;
-      width: 30vw;
+      width: 50vw;
       margin-top: -5vw;
       margin-left: -7vw;
       display: flex;
       flex-direction: row;
       margin-bottom: 4vw;
+
   }
 
+  .right .header {
+    margin-top: 4vw;
+  }
+
+  .posisi-yang-diminati .header {
+    margin-top: -3vw;
+  }
+
+  .posisi-yang-diminati .header p{
+    font-size: 3.5vw;
+  }
+
+  .med-sos .header p{
+    font-size: 3.5vw;
+  }
+
+  input{
+    height: 5vw;
+    width: 40vw;
+    border-color: #a9a8a8;
+  }
   .opts{
       margin-top: 0vw;
       display: flex;
@@ -535,6 +560,7 @@ input::placeholder {
   #keluar-akun{
       margin-top: 0vw;
       background: #FFC1C1;
+      justify-content: center;
   }
   
   #keluar-akun a{
@@ -548,15 +574,24 @@ input::placeholder {
 
   .bottom-arrow{
       margin-top: 7vw;
-      margin-left: 27vw;
-      font-size: 4vw;
-      width: 4vw;
-      width: 15vw;
+      margin-left: 24vw;
+      font-size: 7vw;
+      width: 35vw;
   }
+
+.instagram img,
+.linked-in img,
+.website img {
+  margin-top: 0.5vw;
+  width: 5vw;
+  height: max-content;
+  
+}
 
   #prev-arrow
   {
       margin-right: 8vw;
+  
   }
 
   .right

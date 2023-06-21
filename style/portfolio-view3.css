@@ -215,6 +215,7 @@ button img{
 #keluar-akun{
     margin-top: 12vw;
     background: #FFC1C1;
+    justify-content: center;
 }
 
 #keluar-akun a{

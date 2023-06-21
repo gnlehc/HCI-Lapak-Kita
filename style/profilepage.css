@@ -292,6 +292,7 @@ button img{
 #keluar-akun{
     margin-top: 12vw;
     background: #FFC1C1;
+    justify-content: center;
 }
 
 #keluar-akun a{
@@ -349,11 +350,15 @@ button img{
 }
 .main-profile-right {
   width: 30vw;
-  transform: translate(160%, -190%);
+  margin-left: 14vw;
+  margin-top: 2vw;
 }
 .phone-joined-on h3 {
   color: rgba(152, 149, 149, 0.757);
   font-weight: lighter;
+}
+.bottom-section{
+  margin-top: -5vw;
 }
 .lengkapi-section {
   height: 10vw;
@@ -534,6 +539,18 @@ mark {
     flex-direction: row;
 }
 
+.profile-pic-div {
+  height: 20vw;
+  width: 20vw;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid grey;
+  left: 1vw;
+  top: 11vw;
+}
 .profil{
   display: none;
 }
@@ -598,6 +615,13 @@ mark {
   margin-left: -8vw;
 }
 
+.main-profile-right {
+  width: 50vw;
+  margin-left: 26vw;
+  margin-top: -4.7vw;
+  font-size: 2vw;
+}
+
 .lengkapi-section {
   height: 6vw;
   width: 50vw;
@@ -607,17 +631,17 @@ mark {
 }
 
 .lengkapi-section h1{
-  font-size: 3.5vw;
+  font-size: 4vw;
 }
 
 .bidang-diminati h2 {
   margin-top: -1vw;
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 .bidang-diminati h4 {
   width: 25vw;
   margin-top: 0.3vw;
-  font-size: 2.5vw;
+  font-size: 3vw;
   height: 5vw;
 }
 
@@ -626,11 +650,11 @@ mark {
     width: 30vw;
     position: relative;
     left: 1vw;
-    margin-top: 10vw;
+    margin-top: 13vw;
   }
 .sosial-media h1
 {
-  font-size: 3.5vw;
+  font-size: 4vw;
 }
 
   .instagram
@@ -639,46 +663,46 @@ mark {
       margin-top: 3vw;
   }
   .instagram i {
-    font-size: 3.5vw;
+    font-size: 5vw;
     padding-right: 1vw;
     margin-right: 1.5vw;
     margin-top: 0.3vw;
   }
   .instagram h4 {
-    width: 15vw;
+    width: 23vw;
+    font-size: 3vw;
     font-weight: lighter;
+    margin-top: 1vw;
   }
   .linked-in
   {
       display: flex;
-      margin-top: 1vw;
+      margin-top: 2vw;
   }
-  .linked-in i {
-    font-size: 3vw;
-    padding-right: 1vw;
-    margin-right: 1.25vw;
-    margin-top: 0.3vw;
+  #linked-in-img
+  {
+    width: 5vw;
+    margin-left: -0.35vw;
   }
   .linked-in h4 {
     width: 8vw;
     font-weight: lighter;
+    font-size: 3vw;
   }
 
   .website
   {
-    margin-top: 1vw;
-    width: 40vw;
+    margin-top: 2vw;
+    width: 60vw;
     margin-left: -0.3vw;
   }
-  .website i {
-    font-size: 3vw;
-    padding-right: 1vw;
-    margin-right: 1.25vw;
-    margin-top: 0.3vw;
-  }
   .website h4 {
-    width: 35vw;
+    width: 80vw;
     font-weight: lighter;
+  }
+  #website-img
+  {
+    width: 5vw;
   }
 
 }
