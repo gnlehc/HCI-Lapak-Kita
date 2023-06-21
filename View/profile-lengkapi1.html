@@ -14,6 +14,7 @@
       src="https://kit.fontawesome.com/7563b17235.js"
       crossorigin="anonymous"></script>
     <title>Pengaturan Profil</title>
+    <script src="/scripts/main.js" defer></script>
   </head>
   <body>
     <div class="page-container">
@@ -54,16 +55,8 @@
           <div class="opts">
             <a href="/View/profilepage.html"
               ><button id="profilmu">
-                <!-- <i
-                class="fa-regular fa-user"
-                style="color: #1a1a1a"
-                id="user-icon"></i> -->
                 <img src="../assets/profile-logo.png" alt="" />
                 Profilmu
-                <!-- <i
-                class="fa-solid fa-angle-right"
-                style="color: #1a1a1a"
-                id="arrow-right1"></i> -->
               </button></a
             >
 
@@ -71,10 +64,6 @@
               ><button id="lengkapi-profilmu">
                 <img src="../assets/lengkapi-porto.png" alt="" />
                 Lengkapi Profilmu
-                <!-- <i
-                class="fa-solid fa-angle-right"
-                style="color: #1a1a1a"
-                id="arrow-right2"></i> -->
               </button></a
             >
 
@@ -82,10 +71,6 @@
               ><button id="portofoliomu">
                 <img src="../assets/porto-logo.png" alt="" />
                 Portofoliomu
-                <!-- <i
-                class="fa-solid fa-angle-right"
-                style="color: #1a1a1a"
-                id="arrow-right3"></i> -->
               </button></a
             >
 
@@ -104,20 +89,20 @@
             <p>Lengkapi Data Akun</p>
           </div>
 
-          <div class="posisi-yang-diminati">
-            <div class="header">
-              <p>Posisi yang Diminati</p>
-            </div>
-            <input type="text" placeholder="Admin Instagram" id="pos" />
-          </div>
-
-          <div class="med-sos">
-            <div class="header">
-              <p>Sosial Media</p>
+          <form id="profile-detail">
+            <div class="posisi-yang-diminati">
+              <div class="header">
+                <h2>Posisi Diminati</h2>
+              </div>
+              <input type="text" placeholder="Admin Instagram" id="pos" />
             </div>
 
-            <div class="sosial-media">
-              <form id="profile-detail">
+            <div class="med-sos">
+              <div class="header">
+                <p>Sosial Media</p>
+              </div>
+
+              <div class="sosial-media">
                 <div class="instagram">
                   <img src="../assets/instagram-logo.png" alt="" />
                   <input
@@ -145,9 +130,9 @@
                 <div class="btn-submit">
                   <button type="submit" id="redirectButton">Simpan Data</button>
                 </div>
-              </form>
+              </div>
             </div>
-          </div>
+          </form>
 
           <script>
             document
@@ -155,13 +140,13 @@
               .addEventListener("submit", function (e) {
                 e.preventDefault();
 
-                // var pos = document.getElementById("pos").value;
+                var pos = document.getElementById("pos").value;
                 var ig = document.getElementById("instagram-username").value;
                 var linked = document.getElementById("linked-in").value;
                 var sites = document.getElementById("website-username").value;
 
                 var sosmed = {
-                  // position: pos,
+                  position: pos,
                   instagram: ig,
                   linkedIn: linked,
                   website: sites,
@@ -193,4 +178,5 @@
       </div>
     </div>
   </body>
+  <script src="/scripts/main.js"></script>
 </html>

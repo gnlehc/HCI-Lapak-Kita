@@ -12,7 +12,8 @@ body {
   overflow: hidden;
   box-sizing: border-box;
 }
-#hamburger {
+#hamburger,
+#ham {
   display: none;
 }
 
@@ -58,17 +59,6 @@ nav ul li a {
 }
 nav ul li:nth-child(1) {
   color: #1a1a1a;
-}
-nav ul li:nth-child(3)::after {
-  content: "";
-  height: 2px;
-  width: 100%;
-  border-radius: 100px;
-  background-color: #f7c873;
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  transition: 100ms ease-in;
 }
 nav ul li a::after {
   content: "";
@@ -212,6 +202,7 @@ button img {
 #keluar-akun {
   margin-top: 12vw;
   background: #ffc1c1;
+  justify-content: center;
 }
 
 #keluar-akun a {
@@ -486,6 +477,7 @@ input::placeholder {
     display: none;
   }
   #hamburger {
+    cursor: pointer;
     font-size: 6vw;
     display: flex;
     color: #1a1a1a;

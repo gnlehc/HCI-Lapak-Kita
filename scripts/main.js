@@ -23,31 +23,4 @@ hamburgerIcon.addEventListener('click', () => {
 });
 
 
-let observer = new IntersectionObserver(animation, {
-    threshold: 0.20 // seberapa jauh sebelum fungsi callback
-});
-const history = document.querySelectorAll('.brief-his');
-const redirect = document.querySelectorAll('.redirect');
-history.forEach(element => {
-    observer.observe(element);
-});
-redirect.forEach(e => {
-    observer.observe(e);
-});
-
-// callback function
-function animation(entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('scrolled');
-            entry.target.classList.add('scrolled-page');
-
-            observer.unobserve(entry.target)
-        } else {
-            entry.target.classList.remove('scrolled');
-        }
-    });
-}
-
-
 

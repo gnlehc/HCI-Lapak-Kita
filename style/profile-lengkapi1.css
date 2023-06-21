@@ -292,6 +292,7 @@ button img {
 #keluar-akun {
   margin-top: 12vw;
   background: #ffc1c1;
+  justify-content: center;
 }
 
 #keluar-akun a {
@@ -321,7 +322,7 @@ input::placeholder {
 
 .sosial-media {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1vw;
 }
 
@@ -352,13 +353,14 @@ input::placeholder {
 .linked-in input,
 .website input {
   margin-left: 1vw;
+  padding-left: 2vw;
 }
 .instagram img,
 .linked-in img,
 .website img {
-  margin-top: 0.5vw;
+  margin-top: 0.9vw;
   width: 2vw;
-  height: max-content;
+  /* height: max-content; */
 }
 
 .bottom-arrow {
@@ -443,13 +445,7 @@ input::placeholder {
     padding: 8vw;
     text-align: left;
   }
-  nav ul li:nth-child(3)::after {
-    width: 50%;
-    background-color: #f7c873;
-    position: absolute;
-    left: 6vw;
-    transition: 100ms ease-in;
-  }
+
   nav ul li a {
     text-decoration: none;
     color: white;
@@ -465,6 +461,7 @@ input::placeholder {
     display: none;
   }
   #hamburger {
+    cursor: pointer;
     font-size: 6vw;
     display: flex;
     color: #1a1a1a;
@@ -484,14 +481,30 @@ input::placeholder {
   }
 
   .header p {
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: 700;
-    width: 30vw;
+    width: 50vw;
     margin-top: -5vw;
     margin-left: -7vw;
     display: flex;
     flex-direction: row;
     margin-bottom: 4vw;
+  }
+
+  .right .header {
+    margin-top: 4vw;
+  }
+
+  .posisi-yang-diminati .header {
+    margin-top: -3vw;
+  }
+
+  .posisi-yang-diminati .header p {
+    font-size: 3.5vw;
+  }
+
+  .med-sos .header p {
+    font-size: 3.5vw;
   }
 
   .opts {
@@ -501,6 +514,10 @@ input::placeholder {
     gap: 2.7vw;
     margin-left: -7vw;
     height: 6vw;
+  }
+  .opts button {
+    font-size: 1.5vw;
+    font-weight: 500;
   }
 
   button {
@@ -570,9 +587,10 @@ input::placeholder {
   }
 
   .posisi-yang-diminati input {
-    margin-top: -5vw;
+    margin-top: -3vw;
     margin-bottom: 10vw;
     padding-left: 2vw;
+    height: 5vw;
   }
 
   input::placeholder {
@@ -583,7 +601,7 @@ input::placeholder {
   }
   .sosial-media {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1vw;
     /* background: aqua; */
     margin-top: -3vw;
@@ -608,10 +626,21 @@ input::placeholder {
     justify-content: center;
     box-shadow: none;
   }
+
+.posisi-yang-diminati input{
+  margin-top: 2vw;
 }
+  .instagram input,
+.linked-in input,
+.website input {
+  margin-left: 1vw;
+  padding-left: 2vw;
+}
+
 .line-grey {
   background-color: #d9d9d9;
   width: 0.2vw;
   height: 40vw;
   margin-top: 10vw;
+}
 }
