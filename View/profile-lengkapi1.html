@@ -52,41 +52,48 @@
           </div>
 
           <div class="opts">
-            <a href="/View/profilepage.html"><button id="profilmu">
-              <!-- <i
+            <a href="/View/profilepage.html"
+              ><button id="profilmu">
+                <!-- <i
                 class="fa-regular fa-user"
                 style="color: #1a1a1a"
                 id="user-icon"></i> -->
-              <img src="../assets/profile-logo.png" alt="" />
-              Profilmu
-              <!-- <i
+                <img src="../assets/profile-logo.png" alt="" />
+                Profilmu
+                <!-- <i
                 class="fa-solid fa-angle-right"
                 style="color: #1a1a1a"
                 id="arrow-right1"></i> -->
-            </button></a>
+              </button></a
+            >
 
-            <a href="#"><button id="lengkapi-profilmu">
-              <img src="../assets/lengkapi-porto.png" alt="" />
-              Lengkapi Profilmu
-              <!-- <i
+            <a href="#"
+              ><button id="lengkapi-profilmu">
+                <img src="../assets/lengkapi-porto.png" alt="" />
+                Lengkapi Profilmu
+                <!-- <i
                 class="fa-solid fa-angle-right"
                 style="color: #1a1a1a"
                 id="arrow-right2"></i> -->
-            </button></a>
+              </button></a
+            >
 
-            <a href="/View/profile-portfoliomu.html"><button id="portofoliomu">
-              <img src="../assets/porto-logo.png" alt="" />
-              Portofoliomu
-              <!-- <i
+            <a href="/View/profile-portfoliomu.html"
+              ><button id="portofoliomu">
+                <img src="../assets/porto-logo.png" alt="" />
+                Portofoliomu
+                <!-- <i
                 class="fa-solid fa-angle-right"
                 style="color: #1a1a1a"
                 id="arrow-right3"></i> -->
-            </button></a>
+              </button></a
+            >
 
-            <a href="register.html"><button id="keluar-akun">
-              Keluar Akun
-              <img src="../assets/logout-logo.png" alt="" />
-            </button></a>
+            <a href="register.html"
+              ><button id="keluar-akun">
+                Keluar Akun
+                <img src="../assets/logout-logo.png" alt="" /></button
+            ></a>
           </div>
         </div>
 
@@ -101,10 +108,7 @@
             <div class="header">
               <p>Posisi yang Diminati</p>
             </div>
-            <input
-              type="text"
-              placeholder="Admin Instagram"
-              id="instagram-input" />
+            <input type="text" placeholder="Admin Instagram" id="pos" />
           </div>
 
           <div class="med-sos">
@@ -124,7 +128,10 @@
 
                 <div class="linked-in">
                   <img src="../assets/linked-in.png" alt="" />
-                  <input type="text" placeholder="Ayu Diaz" id="linked-in" />
+                  <input
+                    type="text"
+                    placeholder="linkedin.com/in/AyuDiaz/"
+                    id="linked-in" />
                 </div>
 
                 <div class="website">
@@ -142,6 +149,34 @@
             </div>
           </div>
 
+          <script>
+            document
+              .getElementById("profile-detail")
+              .addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                // var pos = document.getElementById("pos").value;
+                var ig = document.getElementById("instagram-username").value;
+                var linked = document.getElementById("linked-in").value;
+                var sites = document.getElementById("website-username").value;
+
+                var sosmed = {
+                  // position: pos,
+                  instagram: ig,
+                  linkedIn: linked,
+                  website: sites,
+                };
+
+                var sosmedData = localStorage.getItem("sosmed");
+                var sosmedArray = sosmedData ? JSON.parse(sosmedData) : [];
+                sosmedArray.push(sosmed);
+                localStorage.setItem("sosmed", JSON.stringify(sosmedArray));
+                console.log(sosmedArray);
+                console.log(sosmedData);
+                // window.location.href = '/View/profilepage.html';
+              });
+          </script>
+
           <div class="bottom-arrow">
             <i
               class="fa-solid fa-angle-left"
@@ -158,5 +193,4 @@
       </div>
     </div>
   </body>
-  <script src="/scripts/profile-lengkapi1.js"></script>
 </html>
