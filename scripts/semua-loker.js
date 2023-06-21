@@ -408,7 +408,7 @@ console.log(y);
 
 const detalLoker = [
     {
-        id: 1,
+        id: 0,
         content: [
             {
                 Position: "Instagram Admin: Content and Marketing",
@@ -425,7 +425,7 @@ const detalLoker = [
 
     },
     {
-        id: 2,
+        id: 1,
         content: [
             {
                 Position: "Event Organizer: Rundown and Budgeting",
@@ -440,6 +440,17 @@ const detalLoker = [
         ]
     }
 ]
+const detailLokerArray = JSON.stringify(detalLoker);
+
+localStorage.setItem('talents', detailLokerArray);
+
+const getDetail = localStorage.getItem('talents');
+
+const detail_parse = JSON.parse(detailLokerArray);
+// console.log(display)
+console.log(detail_parse)
+
+
 
 var left = document.getElementById('body-left-right')
 var left_content = document.getElementById('left-content')
