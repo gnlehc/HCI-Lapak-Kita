@@ -1,203 +1,202 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-*
-{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'DM Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    z-index:-1;
-    top: 0;
-    height: 5vw;
-    width: 100%;
-    background: #FFE5B5;
-    font-family: 'DM Sans';
-    font-size: 2vw;
-    font-weight: 700;
-    margin-bottom: 2vw;
+.header {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  z-index: -1;
+  top: 0;
+  height: 5vw;
+  width: 100%;
+  background: #ffe5b5;
+  font-family: "DM Sans";
+  font-size: 2vw;
+  font-weight: 700;
+  margin-bottom: 2vw;
 }
 
-.header p{
-    margin-left: 4vw;
-    
+.header p {
+  margin-left: 4vw;
 }
 
-.body-left-right{
-    display: flex;
-    flex-direction: row;
-    gap: 12vw;
-    margin-bottom: 2vw;
+.body-left-right {
+  display: flex;
+  flex-direction: row;
+  gap: 12vw;
+  margin-bottom: 2vw;
 }
 
-.left{
-    display: flex;
-    flex-direction: column;
-    padding-left: 4vw;
+.left {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4vw;
 }
 
-.header-left{
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
+.header-left {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
 }
 
-.header-left img{
-    width: 8vw;
-    height:max-content;
+.header-left img {
+  width: 8vw;
+  height: max-content;
 }
 
-.text-admin{
-    display: flex;
-    flex-direction: column;
-    gap: 1vw;
+.text-admin {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
 }
 
-#position{
-    font-family: "DM Sans";
-    font-size: 2vw;
-    font-weight: 700;
-    max-width: 24vw;
+#position {
+  font-family: "DM Sans";
+  font-size: 2vw;
+  font-weight: 700;
+  max-width: 24vw;
 }
 
-.text-admin p{
-    font-size: 1vw;
-    font-family: "DM Sans";
-    font-weight: 500;
+.text-admin p {
+  font-size: 1vw;
+  font-family: "DM Sans";
+  font-weight: 500;
 }
 
-.durasi-waktu p{
-    margin-top: 2vw;
-    font-size: 1.2vw;
-    border: 0.1vw solid #FFE5B5;
-    border-radius: 2vw;
-    padding: 0.75vw;
-    max-width: 7.7vw;
-    font-family: "DM Sans";
-    font-weight: 500;
+.durasi-waktu p {
+  margin-top: 2vw;
+  font-size: 1.2vw;
+  border: 0.1vw solid #ffe5b5;
+  border-radius: 2vw;
+  padding: 0.75vw;
+  max-width: 7.7vw;
+  font-family: "DM Sans";
+  font-weight: 500;
 }
 
-.tanggal{
-    margin-top: 1vw;
-    font-size: 1.2vw;
-    font-family: "DM Sans";
-    font-weight: 500;
+.tanggal {
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  font-family: "DM Sans";
+  font-weight: 500;
 }
 
-.pendaftar p{
-    margin-top: 2vw;
-    font-size: 1.2vw;
-    font-family: "DM Sans";
-    font-weight: 500;
+.pendaftar p {
+  margin-top: 2vw;
+  font-size: 1.2vw;
+  font-family: "DM Sans";
+  font-weight: 500;
 }
 
-.pendaftar img{
-    margin-top: 1vw;
-    width: 15vw;
-    height: max-content
+.pendaftar img {
+  margin-top: 1vw;
+  width: 15vw;
+  height: max-content;
 }
 
-.daftar{
-    margin-top: 14vw;
-    background-color: #FFCA6B;
-    font-size: 1.2vw;
-    font-weight: 700;
-    align-self: center;
-    padding: 1vw 8vw;
-    border-radius: 2vw;
-    cursor: pointer;
+.daftar {
+  margin-top: 14vw;
+  background-color: #ffca6b;
+  font-size: 1.2vw;
+  font-weight: 700;
+  align-self: center;
+  padding: 1vw 8vw;
+  border-radius: 2vw;
+  cursor: pointer;
 }
 
-.right{
-    margin-top: -1vw;
+.right {
+  margin-top: -1vw;
 }
-#header-desc{
-    margin-top: 1vw;
-    font-size: 1.2vw;
-    font-weight: 500;
-    border: 0.1vw solid #FFE5B5;
-    border-radius: 2vw;
-    max-width: 5.5vw;
-    padding: 0.75vw;
-}
-
-.deskripsi p{
-    margin-top: 1vw;
-    font-size: 1.2vw;
-    font-weight: 300;
-    max-width: 45vw;
+#header-desc {
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+  border: 0.1vw solid #ffe5b5;
+  border-radius: 2vw;
+  max-width: 5.5vw;
+  padding: 0.75vw;
 }
 
-#header-jenis{
-    font-size: 1.2vw;
-    font-weight: 500;
-    border: 0.1vw solid #FFE5B5;
-    border-radius: 2vw;
-    max-width: 9vw;
-    padding: 0.75vw;
+.deskripsi p {
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  font-weight: 300;
+  max-width: 45vw;
 }
 
-#header-kualifikasi{
-    font-size: 1.2vw;
-    font-weight: 500;
-    border: 0.1vw solid #FFE5B5;
-    border-radius: 2vw;
-    max-width: 6vw;
-    padding: 0.75vw;
+#header-jenis {
+  font-size: 1.2vw;
+  font-weight: 500;
+  border: 0.1vw solid #ffe5b5;
+  border-radius: 2vw;
+  max-width: 9vw;
+  padding: 0.75vw;
 }
 
-#header-skills{
-    margin-top: 1vw;
-    font-size: 1.2vw;
-    font-weight: 500;
-    border: 0.1vw solid #FFE5B5;
-    border-radius: 2vw;
-    max-width: 12.75vw;
-    padding: 0.75vw;
+#header-kualifikasi {
+  font-size: 1.2vw;
+  font-weight: 500;
+  border: 0.1vw solid #ffe5b5;
+  border-radius: 2vw;
+  max-width: 6vw;
+  padding: 0.75vw;
 }
 
-.skills-cards{
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-}
-.skills-cards p{
-    margin-top: 1vw;
-    font-size: 1.2vw;
-    font-weight: 500;
-    border-radius: 1vw;
-    background-color: #FDF2E0;
-    padding: 1vw;
+#header-skills {
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+  border: 0.1vw solid #ffe5b5;
+  border-radius: 2vw;
+  max-width: 12.75vw;
+  padding: 0.75vw;
 }
 
-#header-pend{
-    margin-top: 1vw;
-    font-size: 1.2vw;
-    font-weight: 500;
-    border: 0.1vw solid #FFE5B5;
-    border-radius: 2vw;
-    max-width: 6.4vw;
-    padding: 0.75vw;
+.skills-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+.skills-cards p {
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+  border-radius: 1vw;
+  background-color: #fdf2e0;
+  padding: 1vw;
 }
 
-#header-peng{
-    margin-top: 1vw;
-    font-size: 1.2vw;
-    font-weight: 500;
-    border: 0.1vw solid #FFE5B5;
-    border-radius: 2vw;
-    max-width: 7vw;
-    padding: 0.75vw;
+#header-pend {
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+  border: 0.1vw solid #ffe5b5;
+  border-radius: 2vw;
+  max-width: 6.4vw;
+  padding: 0.75vw;
 }
 
-.daftar a{
-    text-decoration: none;
-    color: black;
+#header-peng {
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+  border: 0.1vw solid #ffe5b5;
+  border-radius: 2vw;
+  max-width: 7vw;
+  padding: 0.75vw;
 }
 
-.daftar a:hover{
-    color: white;
+.daftar a {
+  text-decoration: none;
+  color: black;
+}
+
+.daftar a:hover {
+  color: white;
 }
