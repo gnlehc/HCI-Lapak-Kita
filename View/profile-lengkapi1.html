@@ -27,13 +27,21 @@
                   <li><a href="/View/Home.html"> Utama </a></li>
                   <li><a href="/View/SemuaLoker.html"> Loker </a></li>
                   <li><a href="/View/Unggah.html"> Unggah </a></li>
-                  <li><a href="/View/Notifikasi.html"> Pesan </a></li>
+                  <li><a href="/View/Message.html"> Pesan </a></li>
+                  <li>
+                    <a href="/View/profilepage.html" id="ham"> Profil </a>
+                  </li>
                 </ul>
               </div>
             </div>
             <i id="hamburger" class="fa fa-bars"></i>
           </nav>
-          <input type="button" value="Profil" class="profil" />
+          <button
+            onclick="window.location.href = '/View/profilepage.html'"
+            value="Profil"
+            class="profil">
+            Profil
+          </button>
         </div>
       </div>
 
@@ -44,41 +52,41 @@
           </div>
 
           <div class="opts">
-            <button id="profilmu">
+            <a href="/View/profilepage.html"><button id="profilmu">
               <!-- <i
                 class="fa-regular fa-user"
                 style="color: #1a1a1a"
                 id="user-icon"></i> -->
-              <img src="../assets/profile-logo.png" alt="">
-              <a href="/View/profilepage.html">Profilmu</a>
+              <img src="../assets/profile-logo.png" alt="" />
+              Profilmu
               <!-- <i
                 class="fa-solid fa-angle-right"
                 style="color: #1a1a1a"
                 id="arrow-right1"></i> -->
-            </button>
+            </button></a>
 
-            <button id="lengkapi-profilmu">
-              <img src="../assets/lengkapi-porto.png" alt="">
-              <a href="#">Lengkapi Profilmu</a>
+            <a href="#"><button id="lengkapi-profilmu">
+              <img src="../assets/lengkapi-porto.png" alt="" />
+              Lengkapi Profilmu
               <!-- <i
                 class="fa-solid fa-angle-right"
                 style="color: #1a1a1a"
                 id="arrow-right2"></i> -->
-            </button>
+            </button></a>
 
-            <button id="portofoliomu">
-              <img src="../assets/porto-logo.png" alt="">
-              <a href="/View/profile-portfoliomu.html">Portofoliomu</a>
+            <a href="/View/profile-portfoliomu.html"><button id="portofoliomu">
+              <img src="../assets/porto-logo.png" alt="" />
+              Portofoliomu
               <!-- <i
                 class="fa-solid fa-angle-right"
                 style="color: #1a1a1a"
                 id="arrow-right3"></i> -->
-            </button>
+            </button></a>
 
-            <button id="keluar-akun">
-              <a href = "register.html">Keluar Akun</a>
-              <img src="../assets/logout-logo.png" alt="">
-            </button>
+            <a href="register.html"><button id="keluar-akun">
+              Keluar Akun
+              <img src="../assets/logout-logo.png" alt="" />
+            </button></a>
           </div>
         </div>
 
@@ -93,54 +101,46 @@
             <div class="header">
               <p>Posisi yang Diminati</p>
             </div>
-              <input
-                type="text"
-                placeholder="Admin Instagram"
-                id="instagram-input" />
+            <input
+              type="text"
+              placeholder="Admin Instagram"
+              id="instagram-input" />
           </div>
 
           <div class="med-sos">
             <div class="header">
               <p>Sosial Media</p>
             </div>
-              
-          
-          <div class="sosial-media">
-            <form id="profile-detail">
-              <div class="instagram">
-                <img src="../assets/instagram-logo.png" alt="">
-                <input
-                type="text"
-                placeholder="@ayu_diaz"
-                id="instagram-username" />
-              </div>
 
+            <div class="sosial-media">
+              <form id="profile-detail">
+                <div class="instagram">
+                  <img src="../assets/instagram-logo.png" alt="" />
+                  <input
+                    type="text"
+                    placeholder="@ayu_diaz"
+                    id="instagram-username" />
+                </div>
 
-              <div class="linked-in">
-                <img src="../assets/linked-in.png" alt="">
-                <input
-                type="text"
-                placeholder="Ayu Diaz"
-                id="linked-in" />
-              </div>
+                <div class="linked-in">
+                  <img src="../assets/linked-in.png" alt="" />
+                  <input type="text" placeholder="Ayu Diaz" id="linked-in" />
+                </div>
 
-              <div class="website">
-                <img src="../assets/website-logo.png" alt="">
-                <input
-                type="text"
-                placeholder="www.ayudiaz.id"
-                id="website-username" />
-              </div>
+                <div class="website">
+                  <img src="../assets/website-logo.png" alt="" />
+                  <input
+                    type="text"
+                    placeholder="www.ayudiaz.id"
+                    id="website-username" />
+                </div>
 
-              <div class="btn-submit">
-                <button type ="submit" id="redirectButton">
-                  Simpan Data
-                </button>
-              </div>
-            </form>
+                <div class="btn-submit">
+                  <button type="submit" id="redirectButton">Simpan Data</button>
+                </div>
+              </form>
+            </div>
           </div>
-          </div>
-          
 
           <div class="bottom-arrow">
             <i
@@ -154,10 +154,8 @@
                 id="next-arrow"></i
             ></a>
           </div>
-
         </div>
       </div>
-      
     </div>
   </body>
   <script src="/scripts/profile-lengkapi1.js"></script>
