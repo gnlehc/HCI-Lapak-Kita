@@ -1276,7 +1276,7 @@ nav ul li a:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-top: -38%;
+        margin-top: -50%;
     }
     .bottom-page-left{
         width: 50%;
@@ -1301,24 +1301,24 @@ nav ul li a:hover {
         text-align: end;
     }
     .bottom-page-right p{
-        font-size: 12px;
+        font-size: 8px;
         color: #ffffff;
         text-align: end;
     }
     .mulai-btn{
         width: 60%;
-        height: 27px;
+        height: 20px;
         border-radius: 1000px;
         border-style: none;
         background-color: #ffca6b;
         color: #1a1a1a;
-        font-size: 10px;
+        font-size: 8px;
         cursor: pointer;
         transition: 0.2s ease-in;
     }
     .mulai-btn:hover{
         width: 60%;
-        height: 27px;
+        height: 20px;
         border-radius: 1000px;
         border-style: none;
         background-color: #1a1a1a;
