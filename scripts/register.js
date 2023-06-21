@@ -48,6 +48,9 @@ document.getElementById("form-field").addEventListener("submit", (event) => {
         noTLP: noTLP,
         password: password,
         confirm: confirm,
+        // occupation: [{
+            
+        // },...sebelumnya]
     };
 
     var storedData = localStorage.getItem('user');
