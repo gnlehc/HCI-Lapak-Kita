@@ -6,27 +6,27 @@ const durasi = document.getElementById('durasi');
 const lokasi = document.getElementById('lokasi');
 const catatan = document.getElementById('catatan');
 
-form.addEventListener('Submit', e => {
+form.addEventListener("Submit", e => {
     e.preventDefault();
     validateInputs();
 });
 
 const errorMessage = (element, message) => {
     const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('invalid');
+    const errorDisplay = inputControl.querySelector('.invalid');
 
     errorDisplay.innerText = message;
-    inputControl.classList.add('error');
-    inputControl.classList.remove('success')
+    inputControl.classList.add(' error');
+    inputControl.classList.remove(' success')
 };
 
 const succeedMessage = element => {
     const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('invalid');
+    const errorDisplay = inputControl.querySelector('.invalid');
 
     errorDisplay.innerText = '';
-    inputControl.classList.add('success');
-    inputControl.classList.remove('error');
+    inputControl.classList.add(' success');
+    inputControl.classList.remove(' error');
 };
 
 const validateInputs = () => {
