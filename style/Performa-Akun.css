@@ -348,6 +348,7 @@
         margin-left: 6vw;
         margin-right: 6vw;
     }
+
     .body-container{
         margin-bottom: 2vw;
     }
@@ -380,13 +381,12 @@
     .aktivitasmu, .pengunjung{
         height: 135px;
         background-color: #fff4e0;
-        
         border-radius: 1.5vw;;
-        width: 400px;
+        width: 300px;
+        padding: 10px;
     }
     .aktivitasmu p, .pengunjung p{
         margin-top: 30px;
-        margin-left: 20px;
         font-size: 16px;
         width: 300px;
     }
@@ -404,7 +404,7 @@
     }
     .percentage img{
         margin-left: -100px;
-        width: 200px;
+        width: 150px;
         height: max-content;
     }
     
@@ -422,14 +422,14 @@
     }
     
     .left p{
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
     }
     
     .left img{
         margin-top: 12px;
-        width: 450px;
-        height:max-content
+        width: 320px;
+        height:max-content;
     }
     
     .right{
